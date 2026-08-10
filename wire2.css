@@ -1,0 +1,163 @@
+body{
+    background-color: #000;}
+ 
+   
+
+    
+    .todosbeneficios{
+        width: 1313px;
+        height: 622px;
+        opacity: 1;
+        border-radius: 25px;
+        box-shadow: 0px 4px 4px 0px #00000040;
+        background-color : #B9DDB699;
+        top: 121px;
+        left: 25px;
+        opacity: 1;
+        margin-top: 31px;
+        margin: 25px   ;
+        margin-right: 28px;
+flex-direction: column;    }
+.cuadradosbene{
+display: flex;
+}
+
+.recbeneficios{
+
+       width: 381px;
+        height: 241px;
+        top: 203px;
+        left: 49px;
+        opacity: 1;
+        width: 381;
+        opacity: 1;
+border-radius: 25px;
+background-color: #86C28B99;
+margin: 24px;
+gap: 30px;
+display: flex;
+    }
+
+    .tusbeneficios{
+        width: 161;
+        height: 34;
+        top: 25px;
+        left: 25px;
+        opacity: 1;
+        font-family: Nunito Sans;
+        font-weight: 600;
+        font-style: SemiBold;
+        font-size: 25px;
+        line-height: 100%;
+        letter-spacing: 0%;
+        color: #5C4B4B;
+        margin: 25px;
+                
+    }
+    .rectanguloar{
+    width: 1366px;
+    height: 100px;
+    background-color:  #6DA67A;
+    align-items: center;
+    display: flex;
+    padding: 0 20px;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 20px;
+    }
+    .rectanguloaba{
+    width: 1366px;
+    height: 668px;
+    top: 90px;
+    opacity: 1;
+    background-color: #E4E4E4;
+    display: flex;
+    flex-direction: column;
+    }
+    .arriba{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    
+    
+    }
+    .Inicio {
+        width: 60;
+        height: 34;
+        top: 14px;
+        left: 288px;
+        opacity: 1;
+        font-family: Nunito Sans;
+        font-weight: 600;
+        font-style: SemiBold;
+        font-size: 25px;
+        line-height: 100%;
+        letter-spacing: 0%;
+        color: #5C4B4B;
+                
+    
+    
+    }
+    .Beneficios{
+        width: 117;
+        height: 34;
+        top: 14px;
+        left: 375px;
+        opacity: 1;
+        font-family: Nunito Sans;
+        font-weight: 600;
+        font-style: SemiBold;
+        font-size: 25px;
+        line-height: 100%;
+        letter-spacing: 0%;
+        color: #000000;
+                
+    }
+    .Historial{
+    width: 97;
+    height: 34;
+    top: 32px;
+    left: 544px;
+    opacity: 1;
+    font-family: Nunito Sans;
+    font-weight: 600;
+    font-style: SemiBold;
+    font-size: 25px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #4A4857;
+    }
+    .Acerca{
+    width: 113;
+    height: 34;
+    top: 32px;
+    left: 668px;
+    opacity: 1;
+    font-family: Nunito Sans;
+    font-weight: 600;
+    font-style: SemiBold;
+    font-size: 25px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color:#4A4857;
+    }
+    .Titulo{
+    width: 238;
+    height: 61;
+    top: 18px;
+    left: 25px;
+    opacity: 1;
+    font-family: Nunito Sans;
+    font-weight: 600;
+    font-style: SemiBold;
+    font-size: 45px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #4A4857;
+    }
+    
+    
+    
+    
+    
+    
