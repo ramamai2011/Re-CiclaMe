@@ -3,7 +3,9 @@ body{
  
    
 
-    
+    .lospuntos{
+    display: flex;
+    }
     .todosbeneficios{
         width: 1313px;
         height: 622px;
@@ -21,6 +23,50 @@ flex-direction: column;    }
 .cuadradosbene{
 display: flex;
 }
+.comerciobene{
+    width: 160;
+    height: 41;
+    top: 74px;
+    left: 20px;
+    opacity: 1;
+    font-family: Nunito Sans;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 30px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #551515;
+    margin-top: 74px;
+    margin-right: 201px;
+    
+        
+}
+.puntosbene{
+    width: 171;
+    height: 52;
+    
+    opacity: 1;
+    font-family: Nunito Sans;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 38px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #5C4B4B;
+    margin-left: 20px;
+        
+}
+.seissiete{
+    font-family: Nunito Sans;
+font-weight: 800;
+font-style: ExtraBold;
+font-size: 38px;
+line-height: 100%;
+letter-spacing: 0%;
+
+    color: #5C4B4B;
+    
+}
 
 .recbeneficios{
 
@@ -35,7 +81,8 @@ border-radius: 25px;
 background-color: #86C28B99;
 margin: 24px;
 gap: 30px;
-display: flex;
+flex-direction: column;
+gap: 0px;
     }
 
     .tusbeneficios{
