@@ -141,8 +141,7 @@ gap: 0px;
         line-height: 100%;
         letter-spacing: 0%;
         color: #5C4B4B;
-                
-    
+        cursor: pointer;
     
     }
     .Beneficios{
@@ -158,6 +157,7 @@ gap: 0px;
         line-height: 100%;
         letter-spacing: 0%;
         color: #000000;
+        cursor: pointer;
                 
     }
     .Historial{
