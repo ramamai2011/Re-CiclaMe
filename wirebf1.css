@@ -88,6 +88,14 @@ background-color: #B7B6B6;
 margin-left: 5%;
 margin-top: 3%;
         }
+    .abajoizquierda11{
+    width: 29%;
+    height: 14%;
+    background-color: #B7B6B6;
+    margin-left: 5%;
+    margin-top: 3%;
+    }
+
 .abajoizquierda13{
 width: 23%;
 height: 65%;
@@ -97,12 +105,30 @@ margin-right: 4%;
 
 margin-left: auto;
             }
+.abajoizquierda21{
+    width: 29%;
+    height: 14%;
+    background-color: #B7B6B6;
+    margin-left: 5%;
+    margin-top: 3%;
+}
+.abajoizquierda22{
+width: 56%;
+height: 70%;
+background-color: #B7B6B6;
+margin: 3%;
+}   
 .abajoderecha{
 width: 55%;
 height: 77%;
 background-color: #D9D9D9;
 margin-top: 1.9%;
 margin-left: 5%;
+}
+.cuadradosabajoderecha{
+width: 29%;
+height: 39%;
+background-color: #B7B6B6;
 }
 .abajodeltodo{
 width: 96%;
