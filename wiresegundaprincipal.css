@@ -1,101 +1,81 @@
 body{
-    background-color: #000;}
-    .cuadradosbene{
-    display: flex;
-    gap: 20px;
-    flex-direction: column;
-    }
+    background-color: #000;
+   height: 100vh;
+margin: 0;}
  .logo{
-    height: 100%;
+    height: 150%;
     aspect-ratio: 1/1;
     }
-    
-    
-    .rectanguloar{
-    width: 1366px;
-    height: 100px;
-    background-color:  #6DA67A;
-    align-items: center;
-    display: flex;
-    padding: 0 20px;
-    justify-content: space-between;
-    box-sizing: border-box;
-    padding: 20px;
+    .arribadeltodo{
+   height: 11%;
+   width: 100%;
+   background-color: #6DA67AE5;
+   display: flex;
     }
-    .rectanguloaba{
-    width: 1366px;
-    height: 668px;
-    top: 90px;
-    opacity: 1;
-    background-color: #E4E4E4;
-    display: flex;
-    flex-direction: column;
-    }
-    .arriba{
-    display: flex;
-    gap: 30px;
-    align-items: center;
-    
-    
-    }
-    .Inicio {
-    left: 313px;
-    opacity: 1;
-    font-family: Nunito Sans;
-    font-weight: 600;
-    font-style: SemiBold;
-    font-size: 25px;
-    line-height: 100%;
-    letter-spacing: 0%;
-    color: #000;
-    cursor: pointer;
-
-    
-    
-    }
-    .Beneficios{    
-    top: 32px;
-    left: 400px;
-    opacity: 1;
-    font-family: Nunito Sans;
-    font-weight: 600;
-    font-style: SemiBold;
-    font-size: 25px;
-    line-height: 100%;
-    letter-spacing: 0%;
-    color: #4A4857;
-    cursor: pointer;
-    }
-    .Historial{
-    width: 97;
-    height: 34;
-    top: 32px;
-    left: 544px;
-    opacity: 1;
-    font-family: Nunito Sans;
-    font-weight: 600;
-    font-style: SemiBold;
-    font-size: 25px;
-    line-height: 100%;
-    letter-spacing: 0%;
-    color: #4A4857;
-    }
-    .Acerca{
-    width: 113;
-    height: 34;
-    top: 32px;
-    left: 668px;
-    opacity: 1;
-    font-family: Nunito Sans;
-    font-weight: 600;
-    font-style: SemiBold;
-    font-size: 25px;
-    line-height: 100%;
-    letter-spacing: 0%;
-    color:#4A4857;
-    }
-        
-    
-    
-    
-    
+   .contenedorabajo{
+   width: 100%;
+   height: 89%;
+   background-color: #E4E4E4;
+   display: flex;
+   flex-direction: column;
+   }
+   .horizontal{
+   display: flex;
+   width: 100%;
+   gap: 2%;
+   margin: 2%;
+   }
+   .holausu{
+   width: 30%;
+   height: 33%;
+   background-color: #F3F3F3;
+   border: 2px solid #51D75CB2
+   }
+   .quehacer{
+   height: 33%;
+   width: 34%;
+   background-color: #F3F3F3;
+   border: 2px solid #51D75CB2   ;
+   }
+   .historial{
+   width: 28%;
+   height: 93%;
+   background-color: #F3F3F3;
+   border: 2px solid #51D75CB2;
+   }
+   .puntocercano{
+   width: 67%;
+   height: 57%;
+   background-color: #F3F3F3;
+   border: 2px solid #51D75CB2
+   }
+  
+   .textosarriba{
+   gap: 3%;
+   display: flex;
+   width: 100%;
+   height: 100%;
+   }
+   .parteactual{
+      font-family: Nunito Sans;
+      font-weight: 600;
+      font-style: SemiBold;
+      font-size: 30px;
+      line-height: 100%;
+      letter-spacing: 0%;
+      text-decoration: underline;
+      text-decoration-style: solid;
+      text-decoration-thickness: 0%;
+      text-decoration-skip-ink: auto;
+      color: #202020;
+   }
+   .otraparte{
+      font-family: Nunito Sans;
+      font-weight: 600;
+      font-style: SemiBold;
+      font-size: 30px;
+      line-height: 100%;
+      letter-spacing: 0%;
+color: #4A4857;      
+   }
+   
