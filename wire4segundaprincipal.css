@@ -17,6 +17,7 @@ margin: 0;}
    height: 89%;
    background-color: #E4E4E4;
    display: flex;
+   flex-direction: column;
    }
    .horizontal{
    display: flex;
@@ -25,71 +26,30 @@ margin: 0;}
    margin: 2%;
    }
    .holausu{
-   width: 47%;
-   height: 95%;
+   width: 30%;
+   height: 33%;
    background-color: #F3F3F3;
-   border: 2px solid #51D75CB2;
-   border-radius: 15px;
-border-width: 2px;
-opacity: 1;
+   border: 2px solid #51D75CB2
    }
    .quehacer{
-   height: 95%;
-   width: 47%;
+   height: 33%;
+   width: 34%;
    background-color: #F3F3F3;
    border: 2px solid #51D75CB2   ;
-   border-radius: 15px;
-border-width: 2px;
-opacity: 1;
    }
    .historial{
-      width: 100%;
-      height: 51%;
-      background-color: #F3F3F3;
-      border: 2px solid #51D75CB2;
-border-radius: 15px;
-border-width: 2px;
-opacity: 1;
-
-      }
-   .beneficios{
-   width: 100%;
-   height: 47%;
+   width: 28%;
+   height: 93%;
    background-color: #F3F3F3;
    border: 2px solid #51D75CB2;
-margin-top: 3%; 
-margin-right: 3%; 
-border-radius: 15px;
-border-width: 2px;
-opacity: 1; }
+   }
    .puntocercano{
-   width: 96.5%;
+   width: 67%;
    height: 57%;
    background-color: #F3F3F3;
-   border: 2px solid #51D75CB2;
-   margin: 1%;
-   border-radius: 15px;
-border-width: 2px;
-opacity: 1;
+   border: 2px solid #51D75CB2
    }
-  .abajoizquierda{
-   flex-direction: column;
-   width: 70%;
-   height: 100%;
-  }
-  .abajoderecha{
-   flex-direction: column;
-   width: 33%;
-   height: 93%;
-   margin: 0.7%;
-  }
-  .arribaabajoizquierda{
-   height: 36%;
-   width: 100%;
-   display: flex;
-   gap: 2%;
-   margin: 1%;
-  }
+  
    .textosarriba{
    gap: 3%;
    display: flex;
@@ -110,6 +70,7 @@ opacity: 1;
       color: #202020;
       cursor: pointer;
    }
+   
    .otraparte{
       font-family: Nunito Sans;
       font-weight: 600;

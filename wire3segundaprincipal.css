@@ -1,0 +1,68 @@
+body{
+    background-color: #000;
+   height: 100vh;
+margin: 0;}
+ .logo{
+    height: 150%;
+    aspect-ratio: 1/1;
+    }
+    .arribadeltodo{
+   height: 11%;
+   width: 100%;
+   background-color: #6DA67AE5;
+   display: flex;
+    }
+   .contenedorabajo{
+   width: 100%;
+   height: 89%;
+   background-color: #E4E4E4;
+   display: flex;
+   flex-direction: column;
+   }
+   .textosarriba{
+   gap: 3%;
+   display: flex;
+   width: 100%;
+   height: 100%;
+   }
+   .parteactual{
+      font-family: Nunito Sans;
+      font-weight: 600;
+      font-style: SemiBold;
+      font-size: 30px;
+      line-height: 100%;
+      letter-spacing: 0%;
+      text-decoration: underline;
+      text-decoration-style: solid;
+      text-decoration-thickness: 0%;
+      text-decoration-skip-ink: auto;
+      color: #202020;
+      cursor: pointer;
+   }
+   .otraparte{
+      font-family: Nunito Sans;
+      font-weight: 600;
+      font-style: SemiBold;
+      font-size: 30px;
+      line-height: 100%;
+      letter-spacing: 0%;
+color: #4A4857;      
+cursor: pointer;
+   }
+   .contenedorabajo{
+    width: 100%;
+    height: 89%;
+    background-color: #E4E4E4;
+    display: flex;
+    }
+   .cuadradoconbeneficios{
+    width: 97%;
+    height: 95%;
+    background-color: #F3F3F3;
+    border: 2px solid #51D75CB2;
+    width: 1324;
+border-radius: 15px;
+border-width: 2px;
+opacity: 1;
+margin: 1%;
+   }
