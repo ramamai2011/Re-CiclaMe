@@ -1,0 +1,37 @@
+body{
+height: 100vh;
+background-color: #D9D9D9
+}
+.adentrocuadrado{
+width: 65%;
+height: 83%;
+background-color: #B7B6B6;
+margin: 4%;
+}
+.recarriba{
+width: 52%;
+height: 11%;
+background-color: #A7A7A7;
+margin-top: 4%;
+margin-left: 22%;
+
+
+}.losrecabajo{
+width: 56%;
+height: 13%;
+background-color: #A7A7A7;
+margin-top: 10%;
+margin-left: 36%;
+}
+.recabajotd{
+width: 28%;
+height: 5%;
+margin: 4%;
+background-color: #A7A7A7;
+}
+.cuadradoizq{
+width: 21%;
+height: 35%;
+background-color: #A7A7A7;
+margin: 4%;
+}
