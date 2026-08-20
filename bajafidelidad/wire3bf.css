@@ -52,4 +52,30 @@ margin-left: auto;
     flex-direction: column;
     margin: 2%;
     }
-    
+.minirec{
+width: 10%;
+height: 3%;
+background-color: #A7A7A7;
+margin: 1%;
+}
+.loscuadrados{
+width: 30.5%;
+height: 90%;
+background-color: #B7B6B6;
+}
+.cuadradosarriba{
+    display: flex;
+    height: 40%;
+    width: 100%;
+    gap: 2%;
+    margin: 2%;
+    }.cuadradosabajo{
+display: flex;
+height: 40%;
+width: 100%;
+gap: 2%;
+margin: 2%;
+}
+.cuadradosabajo{
+display: flex;
+}

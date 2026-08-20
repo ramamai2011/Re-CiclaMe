@@ -6,32 +6,28 @@ body{
     width: 65%;
     height: 83%;
     background-color: #B7B6B6;
-    margin: 4%;
+    margin-top: 8.5%;
+    margin-left: 17.5%;
+    padding-top: 1%;
     }
     .recarriba{
     width: 52%;
     height: 11%;
     background-color: #A7A7A7;
-    margin-top: 4%;
     margin-left: 22%;
-    
-    
-    }.losrecabajo{
-    width: 56%;
-    height: 13%;
+    margin-top: 2.5%;
+    }
+    .losrec{
+    width: 89%;
+    height: 10%;
     background-color: #A7A7A7;
-    margin-top: 10%;
-    margin-left: 36%;
+    margin-left: 5%;
+    margin-top: 2%;
+    margin-bottom: 2%;
     }
     .recabajotd{
-    width: 28%;
-    height: 5%;
-    margin: 4%;
+    width: 29%;
+    height: 9%;
     background-color: #A7A7A7;
-    }
-    .cuadradoizq{
-    width: 21%;
-    height: 35%;
-    background-color: #A7A7A7;
-    margin: 4%;
-    }
+    margin-left: 35.5%;
+}
