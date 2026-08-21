@@ -1,0 +1,123 @@
+body{
+    background-color: #000;
+   height: 100vh;
+margin: 0;}
+ .logo{
+    height: 150%;
+    aspect-ratio: 1/1;
+    }
+    .arribadeltodo{
+   height: 11%;
+   width: 100%;
+   background-color: #6DA67AE5;
+   display: flex;
+    }
+   .contenedorabajo{
+   width: 100%;
+   height: 89%;
+   background-color: #E4E4E4;
+   display: flex;
+   }
+   .horizontal{
+   display: flex;
+   width: 100%;
+   gap: 2%;
+   margin: 2%;
+   }
+   .holausu{
+   width: 47%;
+   height: 95%;
+   background-color: #F3F3F3;
+   border: 2px solid #51D75CB2;
+   border-radius: 15px;
+border-width: 2px;
+opacity: 1;
+   }
+   .quehacer{
+   height: 95%;
+   width: 47%;
+   background-color: #F3F3F3;
+   border: 2px solid #51D75CB2   ;
+   border-radius: 15px;
+border-width: 2px;
+opacity: 1;
+   }
+   .historial{
+      width: 100%;
+      height: 51%;
+      background-color: #F3F3F3;
+      border: 2px solid #51D75CB2;
+border-radius: 15px;
+border-width: 2px;
+opacity: 1;
+
+      }
+   .beneficios{
+   width: 100%;
+   height: 47%;
+   background-color: #F3F3F3;
+   border: 2px solid #51D75CB2;
+margin-top: 3%; 
+margin-right: 3%; 
+border-radius: 15px;
+border-width: 2px;
+opacity: 1; }
+   .puntocercano{
+   width: 96.5%;
+   height: 57%;
+   background-color: #F3F3F3;
+   border: 2px solid #51D75CB2;
+   margin: 1%;
+   border-radius: 15px;
+border-width: 2px;
+opacity: 1;
+   }
+  .abajoizquierda{
+   flex-direction: column;
+   width: 70%;
+   height: 100%;
+  }
+  .abajoderecha{
+   flex-direction: column;
+   width: 33%;
+   height: 93%;
+   margin: 0.7%;
+  }
+  .arribaabajoizquierda{
+   height: 36%;
+   width: 100%;
+   display: flex;
+   gap: 2%;
+   margin: 1%;
+  }
+   .textosarriba{
+   gap: 3%;
+   display: flex;
+   width: 100%;
+   height: 100%;
+   }
+   .parteactual{
+      font-family: Nunito Sans;
+      font-weight: 600;
+      font-style: SemiBold;
+      font-size: 30px;
+      line-height: 100%;
+      letter-spacing: 0%;
+      text-decoration: underline;
+      text-decoration-style: solid;
+      text-decoration-thickness: 0%;
+      text-decoration-skip-ink: auto;
+      color: #202020;
+      cursor: pointer;
+   }
+   .otraparte{
+      font-family: Nunito Sans;
+      font-weight: 600;
+      font-style: SemiBold;
+      font-size: 30px;
+      line-height: 100%;
+      letter-spacing: 0%;
+color: #4A4857;      
+cursor: pointer;
+   }
+   
