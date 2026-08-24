@@ -6,6 +6,14 @@ margin: 0;}
     height: 150%;
     aspect-ratio: 1/1;
     }
+    .flecha{
+color: #59AF60CC;
+   width: 5%;
+   height: 26%;
+     transform: rotate(180deg);
+     
+
+    }
     .arribadeltodo{
    height: 11%;
    width: 100%;
