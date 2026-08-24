@@ -1,84 +1,101 @@
 body{
-    background-color: #000;
-   height: 100vh;
+   background-color: #000;
+  height: 100vh;
 margin: 0;}
- .logo{
-    height: 150%;
-    aspect-ratio: 1/1;
-    }
-    .arribadeltodo{
-   height: 11%;
-   width: 100%;
-   background-color: #6DA67AE5;
-   display: flex;
-    }
-   .contenedorabajo{
+.logo{
+   height: 150%;
+   aspect-ratio: 1/1;
+   }
+   .arribadeltodo{
+  height: 11%;
+  width: 100%;
+  background-color: #6DA67AE5;
+  display: flex;
+   }
+  .contenedorabajo{
+  width: 100%;
+  height: 89%;
+  background-color: #E4E4E4;
+  display: flex;
+  flex-direction: column;
+  }
+  .textosarriba{
+  gap: 3%;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  }
+  .parteactual{
+     font-family: Nunito Sans;
+     font-weight: 600;
+     font-style: SemiBold;
+     font-size: 30px;
+     line-height: 100%;
+     letter-spacing: 0%;
+     text-decoration: underline;
+     text-decoration-style: solid;
+     text-decoration-thickness: 0%;
+     text-decoration-skip-ink: auto;
+     color: #202020;
+     cursor: pointer;
+  }
+  .otraparte{
+     font-family: Nunito Sans;
+     font-weight: 600;
+     font-style: SemiBold;
+     font-size: 30px;
+     line-height: 100%;
+     letter-spacing: 0%;
+color: #4A4857;      
+cursor: pointer;
+  }
+  .contenedorabajo{
    width: 100%;
    height: 89%;
    background-color: #E4E4E4;
    display: flex;
-   flex-direction: column;
    }
-   .horizontal{
-   display: flex;
-   width: 100%;
-   gap: 2%;
-   margin: 2%;
-   }
-   .holausu{
-   width: 30%;
-   height: 33%;
-   background-color: #F3F3F3;
-   border: 2px solid #51D75CB2
-   }
-   .quehacer{
-   height: 33%;
-   width: 34%;
-   background-color: #F3F3F3;
-   border: 2px solid #51D75CB2   ;
-   }
-   .historial{
-   width: 28%;
-   height: 93%;
+  .cuadradoconbeneficios{
+   width: 97%;
+   height: 95%;
    background-color: #F3F3F3;
    border: 2px solid #51D75CB2;
-   }
-   .puntocercano{
-   width: 67%;
-   height: 57%;
-   background-color: #F3F3F3;
-   border: 2px solid #51D75CB2
-   }
-  
-   .textosarriba{
-   gap: 3%;
-   display: flex;
-   width: 100%;
-   height: 100%;
-   }
-   .parteactual{
-      font-family: Nunito Sans;
-      font-weight: 600;
-      font-style: SemiBold;
-      font-size: 30px;
-      line-height: 100%;
-      letter-spacing: 0%;
-      text-decoration: underline;
-      text-decoration-style: solid;
-      text-decoration-thickness: 0%;
-      text-decoration-skip-ink: auto;
-      color: #202020;
-      cursor: pointer;
-   }
-   
-   .otraparte{
-      font-family: Nunito Sans;
-      font-weight: 600;
-      font-style: SemiBold;
-      font-size: 30px;
-      line-height: 100%;
-      letter-spacing: 0%;
-color: #4A4857;      
-cursor: pointer;
-   }
-   
+   width: 1324;
+border-radius: 15px;
+border-width: 2px;
+opacity: 1;
+margin: 1%;
+display: flex;
+flex-direction: column;
+  }
+.titulo{
+  width: 25%;
+  height: 13%;
+  font-family: Nunito Sans;
+  font-weight: 600;
+  font-style: SemiBold;
+  font-size: 32px;
+  line-height: 100%;
+  letter-spacing: 0%;
+color: #000000;   
+margin-top: 1%;
+margin-left: 3%;
+}
+.horizontal{
+display: flex;
+width: 100%;
+height: 30%;
+margin-left: 3%;
+
+gap: 2%;
+}
+.rectangulos{
+width: 29%;
+height: 80%;
+background-color: #D1D1D13B;
+border: 1px solid #999999;
+opacity: 1;
+border-radius: 9px;
+border-width: 1px;
+
+}
