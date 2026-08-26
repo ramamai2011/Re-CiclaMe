@@ -1,0 +1,61 @@
+body{
+    height: 100vh;
+    background-color: #D9D9D9
+    }
+    *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+    .adentrocuadrado{
+    width: 53%;
+    height: 98%;
+    background-color: #F3F3F3;
+    margin-left: 23.5%;
+    border: 3px solid #51D75C;
+    display: flex;
+    flex-wrap: wrap;
+        }
+    .Usuarioft{
+    width: 13%;
+    aspect-ratio: 1/1;
+    margin-left: 9%;
+    margin-right: 2%;
+    }
+    .titulo{
+    margin-right: 20%;
+    margin-top: 11%;
+    }
+  .lostextos{
+flex-direction: column;
+width: 70%;
+height: 20%;
+margin-right: 5%;
+  }
+.chico{
+margin-left:10%;
+margin-right: 70%; 
+}
+    .recarriba{
+    width: 52%;
+    height: 11%;
+    background-color: #A7A7A7;
+    margin-left: 22%;
+    margin-top: 2.5%;
+    }
+    .losrec{
+    width: 82%;
+    height: 7.7%;
+    background-color: #F3F3F3;
+    border: 3px solid #51D75C;
+    margin-left: 10%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    border-radius: 10px;
+    }
+    .recabajotd{
+    width: 29%;
+    height: 9%;
+    background-color: #A7A7A7;
+    margin-left: 35.5%;
+}
