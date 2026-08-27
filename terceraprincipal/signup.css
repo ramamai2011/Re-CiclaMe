@@ -1,0 +1,95 @@
+body{
+    height: 90vh;
+    background-color: #FFFFFF
+    }
+    *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+    .logo{
+    height: 200px;
+    width: 200px;
+    }
+    .titulo{
+        font-family: Nunito Sans;
+font-weight: 700;
+font-style: Bold;
+font-size: 45px;
+line-height: 100%;
+letter-spacing: 0%;
+color: #000000;
+    }
+    .parteizquieda{
+    width: 32%;
+    background-color: white;
+    height: 85%;
+    margin-top: 7.5%;
+    margin-bottom: 7.5%;
+    flex-direction: column;
+    border-right: 3px solid #51D75C
+    }
+    .textobienvenida{
+        font-family: Poppins;
+        font-weight: 300;
+        font-style: Light;
+        font-size: 21px;
+        line-height: 38px;
+        letter-spacing: 0%;
+        width: 58%;
+        height: 33%;
+        
+    }
+    .adentrocuadrado{
+    width: 81%;
+    height: 94%;
+    background-color: lightblue;
+    margin-left: 9.5%;
+    margin-top: 3%;
+    box-shadow: 0px 4px 4px 0px #00000040;
+    display: flex;
+    flex-wrap: wrap;
+        }
+    .Usuarioft{
+    width: 13%;
+    aspect-ratio: 1/1;
+    margin-left: 9%;
+    margin-right: 2%;
+    }
+    .titulo{
+    margin-right: 20%;
+    margin-top: 11%;
+    }
+  .lostextos{
+flex-direction: column;
+width: 70%;
+height: 20%;
+margin-right: 5%;
+  }
+.chico{
+margin-left:10%;
+margin-right: 70%; 
+}
+    .recarriba{
+    width: 52%;
+    height: 11%;
+    background-color: #A7A7A7;
+    margin-left: 22%;
+    margin-top: 2.5%;
+    }
+    .losrec{
+    width: 82%;
+    height: 7.7%;
+    background-color: #F3F3F3;
+    border: 3px solid #51D75C;
+    margin-left: 10%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    border-radius: 10px;
+    }
+    .recabajotd{
+    width: 29%;
+    height: 9%;
+    background-color: #A7A7A7;
+    margin-left: 35.5%;
+}
