@@ -28,29 +28,21 @@ body {
 
 .adentrocuadrado {
   width: 81%;
-  max-width: 900px;
   background-color: #ffffff;
-  margin: 40px auto;
   box-shadow: 0px 4px 4px 0px #00000040;
   border-radius: 16px;
   display: flex;
-  flex-wrap: wrap;
-  overflow: hidden;
-}
+  }
 
 .parteizquieda {
   width: 32%;
+  height: 100%;
   background-color: white;
   padding: 3%;
   display: flex;
   flex-direction: column;
   border-right: 3px solid #51d75c;
 }
-
-.parteizquieda .titulo {
-  margin-bottom: 20px;
-}
-
 .textobienvenida {
   font-weight: 300;
   font-size: 16px;
@@ -59,9 +51,7 @@ body {
 }
 
 .partederecha {
-  flex: 1;
-  min-width: 280px;
-  padding: 40px 40px;
+width: 68%;
   display: flex;
   flex-direction: column;
 }
@@ -95,7 +85,7 @@ body {
 .losrec {
   width: 100%;
   background-color: #f3f3f3;
-  border: 3px solid #51d75c;
+  border: 3px solid #f3f3f3;
   border-radius: 10px;
   padding: 10px 14px;
   display: flex;
@@ -125,16 +115,6 @@ body {
   font-family: Poppins, sans-serif;
   transition: background-color 0.15s ease, transform 0.1s ease;
 }
-
-.botoncrear:hover {
-  background-color: #256330;
-}
-
-.botoncrear:active {
-  transform: translateY(1px);
-}
-
-@media (max-width: 700px) {
   .adentrocuadrado {
     flex-direction: column;
     width: 92%;
@@ -144,4 +124,4 @@ body {
     border-right: none;
     border-bottom: 3px solid #51d75c;
   }
-}
+
