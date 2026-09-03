@@ -24,8 +24,8 @@ body {
 }
 .escribir {
   border: none;
-  background: transparent;
-  width: 100%;
+  outline: none;
+  background-color: transparent;
   color: #1a1a1a;
   font-family: Inter;
   font-weight: 300;
@@ -136,6 +136,7 @@ letter-spacing: 0%;
   border-radius: 10px;
   display: flex;
   text-align: center;
+  align-items: center;
 }
 .img{
 height: 50%;
@@ -167,3 +168,5 @@ align-items: center;
 background-color: #56A25C;
 color: #FFFFFF;
 }
+
+
