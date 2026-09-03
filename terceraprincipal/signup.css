@@ -136,7 +136,7 @@ letter-spacing: 0%;
   border-radius: 10px;
   display: flex;
   text-align: center;
-  align-items: center;
+  align-items: center ;
 }
 .img{
 height: 50%;
