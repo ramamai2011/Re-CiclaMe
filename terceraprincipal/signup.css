@@ -179,11 +179,3 @@ background-color: #56A25C;
 color: #FFFFFF;
 }
 
-
-* {
-  outline: 1px solid red;
-}
-.parteizquieda,
-.partederecha {
-  min-height: 0;
-}
