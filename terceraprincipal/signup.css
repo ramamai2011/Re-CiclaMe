@@ -8,8 +8,10 @@ body {
   box-sizing: border-box;
 }
 .logo {
-  height: 200px;
-  width: 200px;
+  height: 10%;
+aspect-ratio: 1/1;
+margin-top: 23%;
+margin-left: 6%;
 }
 .titulo {
   font-family: Nunito Sans;
@@ -20,7 +22,6 @@ body {
   letter-spacing: 0%;
   color: #000000;
   margin-top: 25%;
-  margin-left: 7%;
 }
 .escribir {
   border: none;
@@ -34,11 +35,20 @@ body {
   line-height: 100%;
   letter-spacing: 0%;
   }
+  .reciclaimg{
+  height: 25%;
+  aspect-ratio: 1/1;
+  margin-left: 10%;
+  margin-top: 8%;
+  }
+  
 .parteizquieda {
   width: 35%;
   background-color: white;
   height: 100%;
   position: relative;
+  display: flex;
+  flex-wrap: wrap;
 }
 .lineaverde {
   position: absolute;
@@ -63,13 +73,13 @@ background-color: white ;
   letter-spacing: 0%;
   width: 56%;
   height: 33%;
-  margin-top: 10%;
-  margin-left: 7%;
+  margin-top: 2%;
+  margin-left: 10%;
   
 }
 .adentrocuadrado {
   width: 81%;
-  height: 94%;
+  height: 90%;
   background-color: white;
   margin-left: 9.5%;
   margin-top: 3%;
@@ -170,3 +180,10 @@ color: #FFFFFF;
 }
 
 
+* {
+  outline: 1px solid red;
+}
+.parteizquieda,
+.partederecha {
+  min-height: 0;
+}
