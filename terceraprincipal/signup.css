@@ -65,7 +65,7 @@ height: 100%;
 background-color: white ;
 }
 .textobienvenida {
-  font-family: Poppins;
+  font-family: poppins;
   font-weight: 300;
   font-style: Light;
   font-size: 21px;
@@ -121,7 +121,7 @@ color: #000000;
 .chico {
   margin-left: 5%;
   margin-right: 70%;
-  font-family: Nunito Sans;
+  font-family: inter;
 font-weight: 500;
 font-style: Medium;
 font-size: 20px;

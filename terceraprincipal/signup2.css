@@ -1,0 +1,182 @@
+body {
+    height: 94vh;
+    background-color: #FAFAFA;
+  }
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .logo {
+    height: 10%;
+  aspect-ratio: 1/1;
+  margin-top: 23%;
+  margin-left: 6%;
+  }
+  .titulo {
+    font-family: Nunito Sans;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 45px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #000000;
+    margin-top: 25%;
+  }
+  .escribir {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: #1a1a1a;
+    font-family: Inter;
+    font-weight: 300;
+    font-style: Light;
+    font-size: 18px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    }
+    .reciclaimg{
+    height: 25%;
+    aspect-ratio: 1/1;
+    margin-left: 10%;
+    margin-top: 8%;
+    }
+    
+  .parteizquieda {
+    width: 35%;
+    background-color: white;
+    height: 100%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .lineaverde {
+    position: absolute;
+    height: 83%;
+    top: 3.5rem;
+    bottom: 3rem;
+    right: 0;
+    width: 0.2rem;
+    background-color: #51d75c;
+  }
+  .partederecha{
+  width: 65%;
+  height: 100%;
+  background-color: white ;
+  }
+  .textobienvenida {
+    font-family: poppins;
+    font-weight: 300;
+    font-style: Light;
+    font-size: 21px;
+    line-height: 38px;
+    letter-spacing: 0%;
+    width: 56%;
+    height: 33%;
+    margin-top: 2%;
+    margin-left: 10%;
+    
+  }
+  .adentrocuadrado {
+    width: 81%;
+    height: 90%;
+    background-color: white;
+    margin-left: 9.5%;
+    margin-top: 3%;
+    box-shadow: 0px 4px 4px 0px #00000040;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 3rem;
+  overflow: hidden;
+  }
+  .Usuarioft {
+    width: 13%;
+    aspect-ratio: 1/1;
+    margin-left: 9%;
+    margin-right: 2%;
+  }
+  .tiitulo {
+    margin-left: 5%;
+    margin-top: 5%;
+    font-family: Nunito Sans;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 35px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #000000;
+  }
+  .p{
+    font-family: Poppins;
+    font-weight: 300;
+    font-style: Light;
+    font-size: 19px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #000000;
+    margin-left: 5%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+  }
+  .chico {
+    margin-left: 5%;
+    margin-right: 70%;
+    font-family: inter;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 20px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  
+  }
+  .recarriba {
+    width: 52%;
+    height: 11%;
+    background-color: #a7a7a7;
+    margin-left: 22%;
+    margin-top: 2.5%;
+  }
+  .losrec {
+    width: 90%;
+    height: 7.7%;
+    background-color: #f3f3f3;
+    border: 3px solid #f3f3f3;
+    margin-left: 5%;
+    margin-bottom: 3%;
+    border-radius: 10px;
+    display: flex;
+    text-align: center;
+    align-items: center ;
+  }
+  .img{
+  height: 50%;
+  width: 5%;
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  
+  }
+  .recabajotd {
+    width: 29%;
+    height: 9%;
+    background-color: #a7a7a7;
+    margin-left: 35.5%;
+  }
+  .crearcuenta{
+    width: 90%;
+    height: 7%;
+    cursor: pointer;
+    margin-left: 5%;
+  margin-bottom: 2%;
+  margin-top: 4%;
+  border-radius: 10px;
+  border: #56A25C;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  background-color: #56A25C;
+  color: #FFFFFF;
+  }
+  
+  
