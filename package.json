@@ -1,8 +1,10 @@
 {
   "name": "re-ciclame",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "Code/server.ts",
   "scripts": {
+    "start": "ts-node Code/server.ts",
+    "dev": "ts-node --watch Code/server.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -19,7 +21,7 @@
   "description": "",
   "devDependencies": {
     "@types/express": "^5.0.6",
-    "@types/node": "^26.3.0",
+    "@types/node": "^26.5.0",
     "ts-node": "^10.9.2",
     "typescript": "^7.0.2"
   },
