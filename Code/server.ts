@@ -1,14 +1,15 @@
-const express = require("express")
-const app = express()
-const PORT = 3000
+import express = require("express"); 
+import type { Request, Response } from "express"; 
 
+const app = express();
+const PORT = 3000;
 
-app.get('/api/users', (req, res) => {
-    res.json({ message: '¡Hola desde la API de usuarios!' });
+app.use(express.json());
+
+app.post("/api/register/button", (req: Request, res: Response) => {
+    
 });
 
-
-
 app.listen(PORT, () => {
-    console.log(`Servidor escuchando en http://localhost:${PORT}`)
+    console.log(`Servidor escuchando en http://localhost:${PORT}`);
 });

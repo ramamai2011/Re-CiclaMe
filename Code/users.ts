@@ -15,5 +15,3 @@ const boton_crear_cuenta = document.getElementById("crear_cuenta") as HTMLButton
 //     console.log(correo)
 // })
 
-
-
