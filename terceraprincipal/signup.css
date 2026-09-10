@@ -10,7 +10,7 @@ body {
 .logo {
   height: 10%;
 aspect-ratio: 1/1;
-margin-top: 23%;
+margin-top: 17%;
 margin-left: 6%;
 }
 .titulo {
@@ -21,7 +21,7 @@ margin-left: 6%;
   line-height: 100%;
   letter-spacing: 0%;
   color: #000000;
-  margin-top: 25%;
+  margin-top: 19%;
 }
 .escribir {
   border: none;
@@ -36,10 +36,10 @@ margin-left: 6%;
   letter-spacing: 0%;
   }
   .reciclaimg{
-  height: 25%;
+  height: 27%;
   aspect-ratio: 1/1;
   margin-left: 10%;
-  margin-top: 8%;
+  margin-top: 0%;
   }
   
 .parteizquieda {
@@ -52,7 +52,7 @@ margin-left: 6%;
 }
 .lineaverde {
   position: absolute;
-  height: 86%;
+  height: 84%;
   top: 3.5rem;
   bottom: 3rem;
   right: 0;
@@ -73,7 +73,7 @@ background-color: white ;
   letter-spacing: 0%;
   width: 56%;
   height: 33%;
-  margin-top: 2%;
+  margin-top: 0%;
   margin-left: 10%;
   
 }
