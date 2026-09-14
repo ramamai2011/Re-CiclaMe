@@ -4,9 +4,11 @@ const datoshome = {
   usuario: "gordet",
   puntoCercano: "Belgrano",
   beneficios: "10% en COTO",
-  historial: "botella de plástico - 10 puntos"
+  historial: "botella de plástico - 10 puntos",
+  puntos: 67
 
 };
 
 const recusuario = document.querySelector(".holausu");
-recusuario.innerHTML = "hola, <span class='textousuario'>" + datoshome.usuario + "</span>";
+recusuario.innerHTML = "<span class='textousuario'>hola, " + datoshome.usuario + "</span>" + "<span class= 'numeropuntos'> " datoshome.puntos
+ 
