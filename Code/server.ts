@@ -1,14 +1,13 @@
 import express = require("express");
-import cors = require("cors"); // Importa el paquete cors
+import cors = require("cors");
+const { readFileSync, writeFileSync } = require("fs");
 import type { Request, Response } from "express";
 
 const app = express();
 const PORT = 3000;
 
-// Habilita CORS para todas las solicitudes
 app.use(cors());
 
-// Middleware para parsear JSON
 app.use(express.json());
 
 interface registroUsuario {
@@ -34,12 +33,31 @@ app.post("/api/register/button", (req: Request<{}, {}, registroUsuario>, res: Re
         return res.status(400).json({ mensaje: "El correo es inválido" });
     }
 
-    if (postal.length < 4) {
+    if (postal.length < 4 || Number(postal) > 1440) {
         return res.status(400).json({ mensaje: "Código postal no válido" });
     }
 
     console.log("Usuario registrado");
     console.log({ correo, nombre, clave, postal });
+    const archivo = "../Code/usuario.json";
+
+    const contenido = readFileSync(archivo, "utf-8");
+
+    const usuarios = JSON.parse(contenido);
+
+    const nuevoUsuario = {
+        correo,
+        nombre,
+        clave,
+        postal
+    };
+
+    usuarios.push(nuevoUsuario);
+
+    writeFileSync(
+        archivo,
+        JSON.stringify(usuarios, null, 2)
+    );
 
     return res.status(201).json({ mensaje: "Usuario registrado correctamente" });
 });

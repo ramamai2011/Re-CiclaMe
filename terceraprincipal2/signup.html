@@ -6,7 +6,6 @@
     <title>Document</title>
     <link rel="stylesheet" href="signup.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <script src="../dist/server.js"></script>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"> 
@@ -63,6 +62,8 @@
         <input id="postal" class="escribir" type="text" placeholder="Ej. 1428" required />
       </div>
       <butto id="boton_registro" class="crearcuenta" >Crear cuenta</button>
+    </div>
+  </div>
       <script>
         const boton = document.getElementById("boton_registro");
 
@@ -72,6 +73,7 @@
     const clave = (document.getElementById("clave")).value;
     const clave_repetida = (document.getElementById("clave_repetida")).value;
     const postal = (document.getElementById("postal")).value;
+    const resultado_registro = document.getElementById("resultado-registro")
 
     const respuesta = await fetch("http://localhost:3000/api/register/button", {
         method: "POST",
@@ -86,13 +88,10 @@
             postal
         })
     });
-
     const datos = await respuesta.json();
-
-    console.log(datos.mensaje);
+    resultado_registro.innerHTML = datos.mensaje
 });
       </script>
-    </div>
-    </div>
+  <h2 class="BORRALO LUKA" id="resultado-registro"></h2>
   </body>
 </html>
