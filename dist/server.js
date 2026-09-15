@@ -1,24 +1,24 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const express = require("express");
+const cors = require("cors"); // Importa el paquete cors
 const app = express();
 const PORT = 3000;
+// Habilita CORS para todas las solicitudes
+app.use(cors());
+// Middleware para parsear JSON
 app.use(express.json());
 app.post("/api/register/button", (req, res) => {
     const { correo, nombre, clave, clave_repetida, postal } = req.body;
-    // compruebo que no falten datos
     if (!correo || !nombre || !clave || !clave_repetida || !postal) {
         return res.status(400).json({ mensaje: "Faltan datos por completar" });
     }
-    // compruebo contraseña
     if (clave !== clave_repetida) {
-        return res.status(400).json({ mensaje: "Las contraseñas no coincide" });
+        return res.status(400).json({ mensaje: "Las contraseñas no coinciden" });
     }
-    // compruebo correo
     if (!correo.includes("@")) {
         return res.status(400).json({ mensaje: "El correo es inválido" });
     }
-    // compruebo postal
     if (postal.length < 4) {
         return res.status(400).json({ mensaje: "Código postal no válido" });
     }
