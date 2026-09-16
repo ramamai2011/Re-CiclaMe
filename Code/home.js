@@ -6,7 +6,7 @@ const datoshome = {
   beneficios: "10% en COTO",
   historial: "botella de plástico - 10 puntos",
   puntos: 67,
-  metros: 6767,
+  metros: 67,
   horario: "Abierto de 8 AM a 8 PM"
 };
 
@@ -25,8 +25,7 @@ recusuario.innerHTML = "<span class='textousuario'>¡Hola, " + datoshome.usuario
    datoshome.puntoCercano + "</span>" +
   "<span class='metros'>" + datoshome.metros + " Metros" + "</span>" +
   "<span class='horario'>" + datoshome.horario + "</span>" +
-  "<span class='verenelmapa'> Ver En el Mapa</span>" 
-
+"<span class='verenelmapa'><span class='verenelmapatxt'>Ver en el mapa</span></span>"
 
 
 
