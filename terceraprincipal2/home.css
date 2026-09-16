@@ -3,6 +3,7 @@ body {
     height: 100vh;
     margin: 0;
   }
+  
   .logo {
     height: 100%;
     aspect-ratio: 1/1;
@@ -118,6 +119,8 @@ margin-left: 2% ;
     opacity: 1;
     margin-top: 2%;
     margin-left: 2%;
+    display: flex;
+    flex-direction: column;
   }
 
 
@@ -131,6 +134,8 @@ margin-left: 2% ;
     border-radius: 25px;
     border-width: 2px;
     opacity: 1;
+    display: flex;
+    flex-direction: column;
   }
   .abajoizquierda {
     flex-direction: column;
@@ -183,4 +188,83 @@ margin-left: 2% ;
     color: #4a4857;
     cursor: pointer;
   }
-  
+  .imgmapa{
+    box-sizing: border-box;
+    width: 91%;
+    height: 45%;    
+    border: 1px solid #A6A6A6;
+    border-radius: 24px;
+    margin-left: 4.5%;
+    margin-top: 3%;
+      }
+  .puntoverdecercano{
+    font-family: Nunito Sans;
+font-weight: 600;
+font-style: SemiBold;
+font-size: 35px;
+line-height: 100%;
+letter-spacing: 0%;
+margin-left: 4.5%;
+margin-top: 2%;
+  }
+.elpuntoverde{
+  font-family: Nunito Sans;
+  font-weight: 600;
+  font-style: SemiBold;
+  font-size: 28px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #4A4857;
+  margin-left: 4.5%;
+  margin-top: 2%;
+}
+.metros{
+  font-family: Nunito Sans;
+  font-weight: 600;
+  font-style: SemiBold;
+  font-size: 55px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  margin-left: 4.5%;
+  margin-top: 2%;
+}
+.horario{
+  font-family: Nunito Sans;
+  font-weight: 600;
+  font-style: SemiBold;
+  font-size: 28px;
+  line-height: 100%;
+  letter-spacing: 0%;  
+  margin-left: 4.5%;
+  margin-top: 2%;
+color: #4A4857;
+}
+.verenelmapa{
+width: 91%;
+height: 8%;
+margin-left: 25px;
+background-color: #56A25C;
+border-radius: 18px;
+margin-left: 4.5%;
+display: flex;
+text-align: center;
+justify-content: center;
+align-items: center;
+color: #FFFFFF;
+margin-top: 3%;
+padding: 4px 0;
+
+}
+.verenelmapatxt{
+  font-family: Nunito Sans;
+  font-weight: 600;
+  font-style: SemiBold;
+  font-size: 10rem;
+  line-height: 1;
+  letter-spacing: 0%;
+  color: #FFFFFF;
+}
+.imgpin{
+width: 3%;
+height: 5%;
+}
