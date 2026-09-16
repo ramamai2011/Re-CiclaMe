@@ -24,6 +24,12 @@ app.post("/api/register/button", (req, res) => {
     const archivo = "./Code/usuarios.json";
     const contenido = readFileSync(archivo, "utf-8");
     const usuarios = contenido.trim() ? JSON.parse(contenido) : [];
+    if (usuarios.some((usuario) => usuario.correo === correo)) {
+        return res.status(400).json({ mensaje: "El correo ya está registrado" });
+    }
+    if (usuarios.some((usuario) => usuario.nombre === nombre)) {
+        return res.status(400).json({ mensaje: "El nombre de usuario ya está registrado" });
+    }
     usuarios.push({ correo, nombre, clave, postal });
     writeFileSync(archivo, JSON.stringify(usuarios, null, 2));
     return res.status(201).json({ mensaje: "Usuario registrado correctamente" });
