@@ -14,21 +14,24 @@ const datosUsuarioNuevo = [];
 app.post("/api/register/correo/button", (req, res) => {
     const { correo } = req.body;
     if (!correo) {
-        return res.status(400).json({ mensaje: "Porfavor escriba su correo" });
+        return res.status(400).json({ mensaje: "Por favor escriba su correo" });
     }
     if (!correo.includes("@")) {
         return res.status(400).json({ mensaje: "El correo es inválido" });
-        console.log("Correo inválido");
     }
-    // chequear en usuarios.json(archivo) si el correo ya existe ysi el usuario esta ocupado
+    // Chequear que no se repita
     if (usuarios.some((usuario) => usuario.correo === correo)) {
         return res.status(400).json({ mensaje: "El correo ya está registrado" });
     }
-    datosUsuarioNuevo.push({
-        correo
-    });
-    window.location.href = '/terceraprincipal2/signup_correo';
+    // Chequear si el correo ya existe en usuarios.json
+    if (usuarios.some((usuario) => usuario.correo === correo)) {
+        return res.status(400).json({ mensaje: "El correo ya está registrado" });
+    }
+    // Agregar el correo al array de nuevos usuarios
+    datosUsuarioNuevo.push({ correo });
+    // Responder con un mensaje de éxito
     return res.status(201).json({ mensaje: "Correo registrado correctamente" });
+    console.log(datosUsuarioNuevo);
 });
 app.listen(PORT, () => {
     console.log(`Servidor escuchando en http://localhost:${PORT}`);

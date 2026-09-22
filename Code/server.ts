@@ -22,32 +22,34 @@ const contenido = readFileSync(archivo, "utf-8");
 const usuarios = contenido.trim() ? JSON.parse(contenido) : [];
 const datosUsuarioNuevo: Partial<registroUsuario>[] = [];
 
-app.post("/api/register/correo/button", (req: Request<{}, {}, registroUsuario>, res: Response) => {
-    const {correo} = req.body;
+app.post("/api/register/correo/button", (req: Request<{}, {}, { correo: string }>, res: Response) => {
+    const { correo } = req.body;
 
     if (!correo) {
-        return res.status(400).json({ mensaje: "Porfavor escriba su correo" });
+        return res.status(400).json({ mensaje: "Por favor escriba su correo" });
     }
 
     if (!correo.includes("@")) {
         return res.status(400).json({ mensaje: "El correo es inválido" });
-        console.log("Correo inválido");
+    }
+    // Chequear que no se repita
+    if (usuarios.some((usuario: registroUsuario) => usuario.correo === correo
+)) {
+        return res.status(400).json({ mensaje: "El correo ya está registrado" });
+        
     }
 
-    // chequear en usuarios.json(archivo) si el correo ya existe ysi el usuario esta ocupado
-
+    // Chequear si el correo ya existe en usuarios.json
     if (usuarios.some((usuario: registroUsuario) => usuario.correo === correo)) {
         return res.status(400).json({ mensaje: "El correo ya está registrado" });
     }
 
+    // Agregar el correo al array de nuevos usuarios
+    datosUsuarioNuevo.push({ correo });
 
-    datosUsuarioNuevo.push({
-        correo
-    });
-
-    window.location.href = '/terceraprincipal2/signup_correo'
-
+    // Responder con un mensaje de éxito
     return res.status(201).json({ mensaje: "Correo registrado correctamente" });
+    console.log(datosUsuarioNuevo)
 });
 
 app.listen(PORT, () => {

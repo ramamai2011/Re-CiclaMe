@@ -31,6 +31,38 @@
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M3.64487 4.46871C3.79475 4.21533 3.99237 3.99439 4.22643 3.81848C4.4605 3.64257 4.72643 3.51515 5.00905 3.44348C5.29167 3.37182 5.58543 3.35732 5.87358 3.40081C6.16172 3.4443 6.4386 3.54493 6.6884 3.69696L21.0409 12.4315C21.3859 12.6417 21.7808 12.7528 22.1833 12.7528C22.5858 12.7528 22.9807 12.6417 23.3257 12.4315L37.6782 3.69696C37.928 3.54479 38.2049 3.44401 38.4931 3.40039C38.7813 3.35676 39.0751 3.37114 39.3579 3.4427C39.6406 3.51425 39.9066 3.64159 40.1408 3.81744C40.375 3.99329 40.5728 4.21421 40.7228 4.46758C40.8728 4.72095 40.9722 5.00181 41.0152 5.29412C41.0582 5.58644 41.044 5.88448 40.9735 6.17124C40.9029 6.458 40.7774 6.72786 40.604 6.96541C40.4307 7.20295 40.2128 7.40353 39.963 7.5557L25.6061 16.2902C24.5721 16.9192 23.389 17.2515 22.1833 17.2515C20.9776 17.2515 19.7945 16.9192 18.7604 16.2902L4.40132 7.5557C3.89719 7.24832 3.53407 6.75043 3.3918 6.17154C3.24953 5.59264 3.34198 4.98013 3.64487 4.46871Z" fill="#1F8527"/>
               </svg>            <input id="correo" class="escribir" type="email" placeholder="Correo electrónico" required />
           </div>
+          <button>Prueba</button>
+          <h3 id="respuesta_registro"></h3>
+          <script>
+            const button = document.querySelector("button");
+            const respuesta_registro = document.getElementById("respuesta_registro");
+          
+            button.addEventListener("click", async () => {
+              try {
+                const correo = document.getElementById("correo").value;
+          
+                const respuesta = await fetch("http://localhost:3000/api/register/correo/button", {
+                  method: "POST",
+                  headers: {
+                    "Content-Type": "application/json",
+                  },
+                  body: JSON.stringify({ correo }),
+                });
+          
+                if (!respuesta.ok) {
+                  const errorData = await respuesta.json();
+                  respuesta_registro.innerHTML = errorData.mensaje || "Error en la solicitud.";
+                  return;
+                }
+          
+                const datos = await respuesta.json();
+                respuesta_registro.innerHTML = datos.mensaje;
+              } catch (error) {
+                console.error("Error al enviar el correo:", error);
+                respuesta_registro.innerHTML = "Hubo un error al registrar el correo.";
+              }
+            });
+          </script>
       </div>
   </body>
 </html>
