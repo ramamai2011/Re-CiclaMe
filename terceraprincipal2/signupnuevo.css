@@ -64,3 +64,29 @@ display: flex;
   margin-top: -3%;
   margin-left: 5%;
 }
+.losrec{
+    width: 90%;
+    height: 16%;
+    margin-left: 5%;
+    margin-top: 4%;
+    display: flex;
+    border: 2px solid #000000;
+    background-color: #EDEDED;
+    border-radius: 16px;
+    align-items: center;
+}
+.escribir{
+    color: #4A4857;
+    font-family: "Nunito Sans";
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    background-color: #EDEDED;
+    border: 2px solid #EDEDED;
+    outline: none;
+    margin-left: 2%;
+}
+.svg{
+margin-left: 2.5%;
+}
