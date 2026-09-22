@@ -58,4 +58,21 @@ app.post("/api/register/clave/button", (req, res) => {
     window.location.href = '/terceraprincipal2/signup_clave';
     return res.status(201).json({ mensaje: "Contraseña registrado correctamente" });
 });
+app.post("/api/register/postal/button", (req, res) => {
+    const { postal } = req.body;
+    if (!postal) {
+        return res.status(400).json({ mensaje: "Porfavor escriba su código postal" });
+    }
+    if (Number(postal) > 1440 || Number(postal) < 1000) {
+        return res.status(400).json({ mensaje: "El código postal es inválido" });
+    }
+    datosUsuarioNuevo.push({
+        postal
+    });
+    // Guardar el nuevo usuario en usuarios.json
+    usuarios.push(datosUsuarioNuevo[0]);
+    writeFileSync(archivo, JSON.stringify(usuarios, null, 2));
+    window.location.href = '/terceraprincipal2/signup_postal';
+    return res.status(201).json({ mensaje: "Código postal registrado correctamente" });
+});
 //# sourceMappingURL=server.js.map
