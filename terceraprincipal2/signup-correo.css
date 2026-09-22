@@ -86,6 +86,8 @@ display: flex;
     border: 2px solid #EDEDED;
     outline: none;
     margin-left: 2%;
+    flex:1;
+    min-width: 0;
 }
 .svg{
 margin-left: 2.5%;
