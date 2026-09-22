@@ -17,15 +17,16 @@ interface registroUsuario {
     postal: string
 }
 
-app.post("/api/register/button", (req: Request<{}, {}, registroUsuario>, res: Response) => {
-    const { correo, nombre, clave, clave_repetida, postal } = req.body;
+const archivo = "./Code/usuarios.json";
+const contenido = readFileSync(archivo, "utf-8");
+const usuarios = contenido.trim() ? JSON.parse(contenido) : [];
+const datosUsuarioNuevo = []
 
-    if (!correo || !nombre || !clave || !clave_repetida || !postal) {
-        return res.status(400).json({ mensaje: "Faltan datos por completar" });
-    }
+app.post("/api/register/correo/button", (req: Request<{}, {}, registroUsuario>, res: Response) => {
+    const {correo} = req.body;
 
-    if (clave !== clave_repetida) {
-        return res.status(400).json({ mensaje: "Las contraseñas no coinciden" });
+    if (!correo) {
+        return res.status(400).json({ mensaje: "Porfavor escriba su correo" });
     }
 
     if (!correo.includes("@")) {
@@ -33,38 +34,58 @@ app.post("/api/register/button", (req: Request<{}, {}, registroUsuario>, res: Re
         console.log("Correo inválido");
     }
 
-    if (postal.length < 4 || Number(postal) > 1440) {
-        return res.status(400).json({ mensaje: "Código postal no válido" });
-    }
-
     // chequear en usuarios.json(archivo) si el correo ya existe ysi el usuario esta ocupado
-    const archivo = "./Code/usuarios.json";
-    const contenido = readFileSync(archivo, "utf-8");
-    const usuarios = contenido.trim() ? JSON.parse(contenido) : [];
 
     if (usuarios.some((usuario: registroUsuario) => usuario.correo === correo)) {
         return res.status(400).json({ mensaje: "El correo ya está registrado" });
     }
 
-    if (usuarios.some((usuario: registroUsuario) => usuario.nombre === nombre)) {
-        return res.status(400).json({ mensaje: "El nombre de usuario ya está registrado" });
-    }
 
-    usuarios.push({
-        correo,
-        nombre,
-        clave,
-        postal
+    datosUsuarioNuevo.push({
+        correo
     });
 
-    writeFileSync(
-        archivo,
-        JSON.stringify(usuarios, null, 2)
-    );
+    window.location.href = '/terceraprincipal2/signup_correo'
 
-    return res.status(201).json({ mensaje: "Usuario registrado correctamente" });
+    return res.status(201).json({ mensaje: "Correo registrado correctamente" });
 });
 
 app.listen(PORT, () => {
     console.log(`Servidor escuchando en http://localhost:${PORT}`);
+});
+
+app.post("/api/register/nombre/button", (req: Request<{}, {}, registroUsuario>, res: Response) => {
+    const {nombre} = req.body;
+
+    if (!nombre) {
+        return res.status(400).json({ mensaje: "Porfavor escriba su nombre" });
+    }
+
+    datosUsuarioNuevo.push({
+        nombre
+    });
+
+    window.location.href = '/terceraprincipal2/signup_nombre'
+
+    return res.status(201).json({ mensaje: "Nombre registrado correctamente" });
+});
+
+app.post("/api/register/clave/button", (req: Request<{}, {}, registroUsuario>, res: Response) => {
+    const {clave, clave_repetida} = req.body;
+
+    if (!clave || !clave_repetida) {
+        return res.status(400).json({ mensaje: "Porfavor escriba su clave" });
+    }
+
+    if (clave !== clave_repetida) {
+        return res.status(400).json({ mensaje: "Las claves no coinciden" });
+    }
+
+    datosUsuarioNuevo.push({
+        clave
+    });
+
+    window.location.href = '/terceraprincipal2/signup_clave'
+
+    return res.status(201).json({ mensaje: "Contraseña registrado correctamente" });
 });
