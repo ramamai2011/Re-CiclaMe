@@ -34,35 +34,64 @@
       <p class="chico">Email</p>
       <div class="losrec">
         <img class="img" src="../Assets/Assets/general/mail.svg" alt="">
-        <input class="escribir" type="email" placeholder="ejemplo@ejemplo.com" required />
+        <input id="correo" class="escribir" type="email" placeholder="ejemplo@ejemplo.com" required />
       </div>
       <p class="chico">Nombre de usuario</p>
 
       <div class="losrec">
         <img src="" alt="">
-        <input class="escribir" type="text" placeholder="Elegí un nombre de ususario" required
+        <input id="nombre" class="escribir" type="text" placeholder="Elegí un nombre de usuario" required
       />
       </div>
       <p class="chico">Contraseña</p>
       <div class="losrec">
         <img class="img" src="../Assets/Assets/general/key.svg" alt="">
-        <input class="escribir"type="password"placeholder="Creá una contraseña segura"required
+        <input id="clave" class="escribir"type="password"placeholder="Creá una contraseña segura"required
       />
       </div>
 
       <p class="chico">Repetir</p>
       <div class="losrec">
         <img class="img" src="../Assets/Assets/general/key.svg" alt="">
-        <input class="escribir"type="password"placeholder="Volvé a escribir la contraseña" required
+        <input id="clave_repetida" class="escribir"type="password"placeholder="Volvé a escribir la contraseña" required
             /></div>
       <p class="chico">Código postal</p>
 
       <div class="losrec">
         <img class="img" src="../Assets/Assets/general/map pin.svg  " alt="">
-        <input class="escribir" type="text" placeholder="Ej. 1428" required />
+        <input id="postal" class="escribir" type="text" placeholder="Ej. 1428" required />
       </div>
-      <button class="crearcuenta" >Crear cuenta</button>
+      <butto id="boton_registro" class="crearcuenta" >Crear cuenta</button>
     </div>
-    </div>
+  </div>
+      <script>
+        const boton = document.getElementById("boton_registro");
+
+        boton?.addEventListener("click", async () => {
+    const correo = (document.getElementById("correo")).value;
+    const nombre = (document.getElementById("nombre")).value;
+    const clave = (document.getElementById("clave")).value;
+    const clave_repetida = (document.getElementById("clave_repetida")).value;
+    const postal = (document.getElementById("postal")).value;
+    const resultado_registro = document.getElementById("resultado-registro")
+
+    const respuesta = await fetch("http://localhost:3000/api/register/button", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify({
+            correo,
+            nombre,
+            clave,
+            clave_repetida,
+            postal
+        })
+    });
+    const datos = await respuesta.json();
+    resultado_registro.innerHTML = datos.mensaje
+});
+      </script>
+  <h2 class="BORRALO LUKA" id="resultado-registro"></h2>
   </body>
 </html>
