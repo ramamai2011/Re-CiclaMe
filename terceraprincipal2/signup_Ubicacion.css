@@ -12,7 +12,7 @@
     }
     .cuadradoentero{
     width: 48%;
-    height: 70%;
+    height: 57%;
     background-color: #ffff;
     box-shadow: 0px 4px 4px 0px #00000040;
     border-radius: 30px;
@@ -56,20 +56,20 @@
         line-height: 100%;
         letter-spacing: 0%;
         color: #000000;
-        margin-top: 4%;
+        margin-top: 6%;
         margin-left: 6%;
     }
     .logo{
-        height: 140%;
+        height: 150%;
       aspect-ratio: 1/1;
-      margin-top: -5%;
-      margin-left: 2%;
+      margin-top: -3%;
+      margin-left: 4%;
     }
     .losrec{
         width: 88%;
-        height: 13%;
+        height: 18%;
         margin-left: 5%;
-        margin-top: 4%;
+        margin-top: 5%;
         display: flex;
         border: 2px solid #F5F5F5;
         background-color: #F5F5F5;
@@ -95,7 +95,7 @@
     }
     .botonsiguiente{
         width: 88%;
-        height: 13%;
+        height: 15%;
         margin-left: 5%;
         margin-top: 5%;
         background-color: #56A25C;
