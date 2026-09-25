@@ -70,7 +70,22 @@ app.post("/api/register/postal/button", (req, res) => {
     // Guardar el nuevo usuario en usuarios.json
     usuarios.push(datosUsuarioNuevo[0]);
     writeFileSync(archivo, JSON.stringify(usuarios, null, 2));
-    window.location.href = '/terceraprincipal2/signup_postal';
     return res.status(201).json({ mensaje: "Código postal registrado correctamente" });
+});
+// Pedir usuario por correo para iniciar sesion
+app.get("/api/buscar_usuario/correo/nombre_usuario", (req, res) => {
+    const { correo } = req.body;
+    if (!correo) {
+        return res.status(400).json({ error: "Falta el correo electrónico" });
+    }
+    const usuario = usuarios.find((u) => u.correo === correo);
+    if (!usuario) {
+        return res.status(404).json({
+            mensaje: "Usuario no encontrado"
+        });
+    }
+    res.json({
+        nombre: usuario.nombre
+    });
 });
 //# sourceMappingURL=server.js.map
