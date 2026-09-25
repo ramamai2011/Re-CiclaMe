@@ -191,3 +191,30 @@ app.post(
 );
 
 // Recibir datos de usuario para registrarse
+
+app.post(
+  "/api/register/usuario/crear_cuenta",
+  (req: Request<{}, {}, registroUsuario>, res: Response) => {
+    const { correo, nombre, clave } = req.body;
+
+    if (!correo || !nombre || !clave) {
+      return res.status(400).json({ mensaje: "Faltan datos por completar" });
+    }
+    // Chequear que el nombre no esta ocupado
+    if (
+      usuarios.some((usuario: registroUsuario) => usuario.nombre === nombre)
+    ) {
+      return res
+        .status(400)
+        .json({ mensaje: "El nombre de usuario ya está registrado" });
+    }
+    if (clave.length < 5) {
+      return res
+        .status(400)
+        .json({ mensaje: "La contraseña debe tener al menos 5 caracteres" });
+    }
+
+    usuarios.push({ correo, nombre, clave });
+    writeFileSync(archivo, JSON.stringify(usuarios, null, 2));
+  },
+);

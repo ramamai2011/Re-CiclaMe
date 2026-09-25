@@ -60,7 +60,7 @@
         </svg>
 
         <input
-          id="correo"
+          id="usuario_nombre"
           class="escribir"
           type="email"
           placeholder="Ingresá tu nombre de usuario"
@@ -110,15 +110,22 @@
         button.addEventListener("click", async () => {
           try {
             const correo = sessionStorage.getItem("correoRegistro");
+            const contra = document.getElementById("contraseña").value;
+            const nombreUsuario =
+              document.getElementById("usuario_nombre").value;
 
             const respuesta = await fetch(
-              "http://localhost:3000/api/register/correo/button",
+              "http://localhost:3000/api/register/usuario/crear_cuenta",
               {
                 method: "POST",
                 headers: {
                   "Content-Type": "application/json",
                 },
-                body: JSON.stringify({ correo }),
+                body: JSON.stringify({
+                  correo,
+                  clave: contra,
+                  nombre: nombreUsuario,
+                }),
               },
             );
 
