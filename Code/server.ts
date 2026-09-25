@@ -20,7 +20,9 @@ interface registroUsuario {
 const archivo = "./Code/usuarios.json";
 const contenido = readFileSync(archivo, "utf-8");
 const usuarios = contenido.trim() ? JSON.parse(contenido) : [];
-const datosUsuarioNuevo: Partial<registroUsuario>[] = [];
+let datosUsuarioNuevo: Partial<registroUsuario>[] = [];
+
+let correoUsuarioRegistrado: string
 
 app.post("/api/register/correo/button", (req: Request<{}, {}, { correo: string }>, res: Response) => {
     const { correo } = req.body;
@@ -34,6 +36,7 @@ app.post("/api/register/correo/button", (req: Request<{}, {}, { correo: string }
     }
     
     if (usuarios.some((usuario: registroUsuario) => usuario.correo === correo)) {
+        correoUsuarioRegistrado = correo;
         return res.status(200).json({ redirigir: "/terceraprincipal2/login.html", mensaje: "El correo ya está registrado, redirigiendo a login." });
     }
 
@@ -114,7 +117,7 @@ app.get("/api/buscar_usuario/correo/nombre_usuario", (req: Request, res: Respons
     if (!correo) {
         return res.status(400).json({error: "Falta el correo electrónico"})
     }
-    const usuario = usuarios.find((u: any) => u.correo === correo);
+const usuario = usuarios.find((u: any) => u.correo === correo);
 
     if (!usuario) {
         return res.status(404).json({
