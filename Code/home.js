@@ -1,12 +1,12 @@
 "use strict";
 
 const datoshome = {
-  usuario: "Gordet",
+  usuario: "Usuario",
   puntoCercano: "Parque Saavedra",
   beneficios: "10% en COTO",
   historial: "botella de plástico - 10 puntos",
-  puntos: 67,
-  metros: 67,
+  puntos: 100,
+  metros: 100,
   horario: "Abierto de 8 AM a 8 PM",
   semana: + 12
 };
