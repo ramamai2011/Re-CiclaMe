@@ -23,9 +23,14 @@ app.post("/api/register/button", (req: Request<{}, {}, registroUsuario>, res: Re
     if (!correo || !nombre || !clave || !clave_repetida || !postal) {
         return res.status(400).json({ mensaje: "Faltan datos por completar" });
     }
-
+    
+    
     if (clave !== clave_repetida) {
         return res.status(400).json({ mensaje: "Las contraseñas no coinciden" });
+    }
+    
+    if (clave.length < 5) {
+        return res.status(400).json({ mensaje: "La contraseña debe tener al menos 5 caracteres" });
     }
 
     if (!correo.includes("@")) {
@@ -36,6 +41,8 @@ app.post("/api/register/button", (req: Request<{}, {}, registroUsuario>, res: Re
     if (postal.length < 4 || Number(postal) > 1440) {
         return res.status(400).json({ mensaje: "Código postal no válido" });
     }
+
+
 
     // chequear en usuarios.json(archivo) si el correo ya existe ysi el usuario esta ocupado
     const archivo = "./Code/usuarios.json";

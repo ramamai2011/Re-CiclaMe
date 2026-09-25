@@ -15,6 +15,9 @@ app.post("/api/register/button", (req, res) => {
     if (clave !== clave_repetida) {
         return res.status(400).json({ mensaje: "Las contraseñas no coinciden" });
     }
+    if (clave.length < 5) {
+        return res.status(400).json({ mensaje: "La contraseña debe tener al menos 5 caracteres" });
+    }
     if (!correo.includes("@")) {
         return res.status(400).json({ mensaje: "El correo es inválido" });
         console.log("Correo inválido");

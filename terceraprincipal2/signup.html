@@ -61,7 +61,7 @@
         <img class="img" src="../Assets/Assets/general/map pin.svg  " alt="">
         <input id="postal" class="escribir" type="text" placeholder="Ej. 1428" required />
       </div>
-      <butto id="boton_registro" class="crearcuenta" >Crear cuenta</button>
+      <button id="boton_registro" class="crearcuenta" type="button">Crear cuenta</button>
     </div>
   </div>
       <script>
@@ -75,21 +75,26 @@
     const postal = (document.getElementById("postal")).value;
     const resultado_registro = document.getElementById("resultado-registro")
 
-    const respuesta = await fetch("http://localhost:3000/api/register/button", {
+    try {
+      const respuesta = await fetch("http://localhost:3000/api/register/button", {
         method: "POST",
         headers: {
-            "Content-Type": "application/json"
+          "Content-Type": "application/json"
         },
         body: JSON.stringify({
-            correo,
-            nombre,
-            clave,
-            clave_repetida,
-            postal
+          correo,
+          nombre,
+          clave,
+          clave_repetida,
+          postal
         })
-    });
-    const datos = await respuesta.json();
-    resultado_registro.innerHTML = datos.mensaje
+      });
+      const datos = await respuesta.json();
+      resultado_registro.innerHTML = datos.mensaje;
+    } catch (error) {
+      resultado_registro.innerHTML = "No se pudo completar el registro. Intentá nuevamente.";
+      console.error("Error al registrar usuario:", error);
+    }
 });
       </script>
   <h2 class="BORRALO LUKA" id="resultado-registro"></h2>
