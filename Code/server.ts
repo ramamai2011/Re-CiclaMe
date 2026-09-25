@@ -32,16 +32,9 @@ app.post("/api/register/correo/button", (req: Request<{}, {}, { correo: string }
     if (!correo.includes("@")) {
         return res.status(400).json({ mensaje: "El correo es inválido" });
     }
-    // Chequear que no se repita
-    if (usuarios.some((usuario: registroUsuario) => usuario.correo === correo
-)) {
-        return res.status(400).json({ mensaje: "El correo ya está registrado" });
-        
-    }
-
-    // Chequear si el correo ya existe en usuarios.json
+    
     if (usuarios.some((usuario: registroUsuario) => usuario.correo === correo)) {
-        return res.status(400).json({ mensaje: "El correo ya está registrado" });
+        return res.status(200).json({ redirigir: "/terceraprincipal2/login.html", mensaje: "El correo ya está registrado, redirigiendo a login." });
     }
 
     // Agregar el correo al array de nuevos usuarios

@@ -38,30 +38,30 @@
             const respuesta_registro = document.getElementById("respuesta_registro");
           
             button.addEventListener("click", async () => {
-              try {
-                const correo = document.getElementById("correo").value;
-          
-                const respuesta = await fetch("http://localhost:3000/api/register/correo/button", {
-                  method: "POST",
-                  headers: {
-                    "Content-Type": "application/json",
-                  },
-                  body: JSON.stringify({ correo }),
-                });
-          
-                if (!respuesta.ok) {
-                  const errorData = await respuesta.json();
-                  respuesta_registro.innerHTML = errorData.mensaje || "Error en la solicitud.";
-                  return;
-                }
-          
-                const datos = await respuesta.json();
-                respuesta_registro.innerHTML = datos.mensaje;
-              } catch (error) {
-                console.error("Error al enviar el correo:", error);
-                respuesta_registro.innerHTML = "Hubo un error al registrar el correo.";
-              }
-            });
+  try {
+    const correo = document.getElementById("correo").value;
+
+    const respuesta = await fetch("http://localhost:3000/api/register/correo/button", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({ correo }),
+    });
+
+    const datos = await respuesta.json();
+
+    if (datos.redirigir) {
+      window.location.href = datos.redirigir; // Redirige al usuario
+      return;
+    }
+
+    respuesta_registro.innerHTML = datos.mensaje || "Correo registrado correctamente.";
+  } catch (error) {
+    console.error("Error al enviar el correo:", error);
+    respuesta_registro.innerHTML = "Hubo un error al registrar el correo.";
+  }
+});
           </script>
       </div>
   </body>
