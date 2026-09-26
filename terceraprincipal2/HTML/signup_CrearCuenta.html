@@ -138,6 +138,15 @@
 
             const datos = await respuesta.json();
             respuesta_registro.innerHTML = datos.mensaje;
+
+            if (respuesta.status === 201) {
+              sessionStorage.setItem("nombreRegistro", nombreUsuario);
+              sessionStorage.setItem("contraseña", contra);
+              window.location.href = new URL(
+                "signUp_Ubicacion.html",
+                window.location.href,
+              ).toString();
+            }
           } catch (error) {
             console.error("Error al enviar el correo:", error);
             respuesta_registro.innerHTML =

@@ -15,5 +15,17 @@
     "correo": "pene@gmail.com",
     "nombre": "elmascapito",
     "clave": "12345"
+  },
+  {
+    "correo": "dasdasdsa@",
+    "nombre": "ProbandoRegistro1",
+    "clave": "123131",
+    "postal": "1428"
+  },
+  {
+    "correo": "ramiromaier@gmail.com",
+    "nombre": "dsadad",
+    "clave": "12345",
+    "postal": "1428"
   }
 ]

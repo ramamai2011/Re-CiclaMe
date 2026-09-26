@@ -142,7 +142,32 @@ app.post("/api/register/usuario/crear_cuenta", (req, res) => {
             .status(400)
             .json({ mensaje: "La contraseña debe tener al menos 5 caracteres" });
     }
-    usuarios.push({ correo, nombre, clave });
+    res.status(201).json({ mensaje: "Usuario registrado correctamente" });
+});
+app.post("/api/register/ubicacion/", (req, res) => {
+    const { postal, nombre, correo, clave } = req.body;
+    if (!postal || !nombre || !correo || !clave) {
+        return res.status(400).json({
+            mensaje: "Faltan datos por completar",
+            datos: { postal, nombre, correo, clave },
+        });
+    }
+    if (Number(postal) > 1440 || Number(postal) < 1000) {
+        return res.status(400).json({ mensaje: "El código postal es inválido" });
+    }
+    if (usuarios.some((usuario) => usuario.correo === correo)) {
+        return res.status(409).json({ mensaje: "El correo ya está registrado" });
+    }
+    if (usuarios.some((usuario) => usuario.nombre === nombre)) {
+        return res
+            .status(409)
+            .json({ mensaje: "El nombre de usuario ya está registrado" });
+    }
+    // Guardar el nuevo usuario en usuarios.json
+    usuarios.push({ correo, nombre, clave, postal });
     writeFileSync(archivo, JSON.stringify(usuarios, null, 2));
+    return res
+        .status(201)
+        .json({ mensaje: "Usuario registrado correctamente" });
 });
 //# sourceMappingURL=server.js.map
