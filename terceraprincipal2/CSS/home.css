@@ -3,6 +3,9 @@ body {
     height: 100vh;
     margin: 0;
   }
+  ¨{
+  margin: 0;
+  }
 
   .logo {
     height: 100%;
@@ -45,7 +48,7 @@ body {
     cursor: pointer;
   } 
   .holausu {
-    height: 41%;
+    height: 44%;
     width: 100%;
     background-color: #56A25C;
     border: 2px solid #56A25C;
@@ -65,7 +68,7 @@ body {
     line-height: 100%;
     letter-spacing: 0%;
   margin-left: 4%;
-margin-top: 4%; 
+margin-top: 2%; 
 color: #FFFFFF;
 
   }
@@ -76,8 +79,8 @@ color: #FFFFFF;
   font-size: 80px;
   line-height: 100%;
   letter-spacing: 0%;
-  margin-left: 4%;
-  margin-top: 3%;
+  margin-left: 3%;
+  margin-top: 2%;
   color: white;
 
 }
@@ -89,7 +92,7 @@ color: #FFFFFF;
     line-height: 100%;
     letter-spacing: 0%;
     margin-left: 4%;
-    margin-top: 3%;
+    margin-top: 2%;
     color: white;
   }
 .usubarra{
@@ -124,7 +127,7 @@ margin-left: 2% ;
   
   .quehacer {
     width: 100%;
-    height: 48%;
+    height: 45%;
     background-color: #ffffff;
     border: 2px solid #ffffff;
     border-radius: 25px;
@@ -140,24 +143,24 @@ margin-left: 2% ;
     font-family: Nunito Sans;
     font-weight: 600;
     font-style: SemiBold;
-    font-size: 30px;
+    font-size: 35px;
     line-height: 100%;
     letter-spacing: 0%;
-    margin: 5%;
+    margin-top: 3%;
+    margin-left: 4%;
   }
   .verbeneficios {
-    width: 89%;
-    height: 26%;
+    width: 92%;
+    height: 24%;
     background-color: #51d75c40;
     box-shadow: 0px 2px 4px 0px #00000040;
     border-radius: 18px;
-    margin-left: 5%;
-    margin-top: 0.1%;
+    margin-left: 4%;
+    margin-top: -0.5%;
     display: flex;
     cursor: pointer;
-    text-align: center;
-    align-items: center;
-  }
+  align-items: center;
+text-align: center;  }
   .texto {
     font-family: Nunito Sans;
     font-weight: 600;
@@ -165,7 +168,7 @@ margin-left: 2% ;
     font-size: 20px;
     line-height: 100%;
     letter-spacing: 0%;
-    margin-left: 3%;
+    margin-left: 20%;
   }
   .gift {
     width: 12%;
@@ -173,14 +176,15 @@ margin-left: 2% ;
     margin: 1%;
     margin-left: 3%;
   }
+  .librito{
+  margin-left: 3%;
+  }
+  .cosobeneficio{
+  margin-left: 3%;
+  }
   .flecha {
-    width: 10%;
-    aspect-ratio: 1/1;
-    transform: rotate(180deg);
-    margin-right: 3%;
+    margin-right: 4%;
     margin-left: auto;
-    fill: #1f8527;
-    stroke: #1f8527;
   }
   .flecha2 {
     width: 10%;
