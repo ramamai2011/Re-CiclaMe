@@ -163,6 +163,9 @@ body {
     color: #56a25c;
     cursor: pointer;
   }
+   .home{
+  margin-left: 3%;
+  }
   .otraparte {
     font-family: Nunito Sans;
     font-weight: 600;
