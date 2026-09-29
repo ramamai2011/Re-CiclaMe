@@ -33,7 +33,7 @@
       <div class="reccontitulos">
         <img
           class="logo"
-          src="../Assets/Assets/brand/logo-sintext.png"
+          src="../../Assets/Assets/brand/logo-sintext.png"
           alt=""
         />
         <p class="titulo">Re-CiclaMe</p>
@@ -79,8 +79,7 @@
       </button>
       <h3 id="respuesta_registro"></h3>
       <script>
-        const respuestaRegistro =
-          document.getElementById("respuesta_registro");
+        const respuestaRegistro = document.getElementById("respuesta_registro");
         const usuario = document.getElementById("usuario_nombre");
         const parametrosUrl = new URLSearchParams(window.location.search);
         const correoUrl = parametrosUrl.get("correo");
@@ -92,8 +91,7 @@
           window.history.replaceState(null, "", urlLimpia);
         }
 
-        const correo =
-          correoUrl || sessionStorage.getItem("correoLogin");
+        const correo = correoUrl || sessionStorage.getItem("correoLogin");
 
         async function cargarNombreUsuario() {
           if (!correo) {
