@@ -162,17 +162,18 @@ body {
   cursor: pointer;
 }
 
-.filtro p {
-  font-family: Nunito Sans;
-  font-weight: 600;
-  font-style: SemiBold;
-  font-size: 15px;
-  line-height: 100%;
-  letter-spacing: 0%;
-  color: #000000;
-  margin-left: 1.5%;
+.filtrotxt {
+color: #FFF;
+font-family: "Nunito Sans";
+font-size: 23px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
 }
-
+.filtroimg {
+  margin-left: 1%;
+  
+}
 .filtroactivo {
   background-color: #56A25C;
   border: 1px solid #56A25C;
