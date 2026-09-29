@@ -13,8 +13,8 @@ interface registroUsuario {
   correo: string;
   nombre: string;
   clave: string;
-  clave_repetida: string;
   postal: string;
+  puntos: number;
 }
 
 const archivo = "./Code/usuarios.json";
@@ -115,28 +115,28 @@ app.post(
   },
 );
 
-app.post(
-  "/api/register/clave/button",
-  (req: Request<{}, {}, registroUsuario>, res: Response) => {
-    const { clave, clave_repetida } = req.body;
+// app.post(
+//   "/api/register/clave/button",
+//   (req: Request<{}, {}, registroUsuario>, res: Response) => {
+//     const { clave } = req.body;
 
-    if (!clave || !clave_repetida) {
-      return res.status(400).json({ mensaje: "Porfavor escriba su clave" });
-    }
+//     if (!clave || !clave_repetida) {
+//       return res.status(400).json({ mensaje: "Porfavor escriba su clave" });
+//     }
 
-    if (clave !== clave_repetida) {
-      return res.status(400).json({ mensaje: "Las claves no coinciden" });
-    }
+//     if (clave !== clave_repetida) {
+//       return res.status(400).json({ mensaje: "Las claves no coinciden" });
+//     }
 
-    datosUsuarioNuevo.push({
-      clave,
-    });
+//     datosUsuarioNuevo.push({
+//       clave,
+//     });
 
-    return res
-      .status(201)
-      .json({ mensaje: "Contraseña registrado correctamente" });
-  },
-);
+//     return res
+//       .status(201)
+//       .json({ mensaje: "Contraseña registrado correctamente" });
+//   },
+// );
 
 app.post(
   "/api/register/postal/button",
@@ -249,7 +249,14 @@ app.post(
     }
 
     // Guardar el nuevo usuario en usuarios.json
-    usuarios.push({ correo, nombre, clave, postal });
+    let nuevoUsuario: registroUsuario = {
+      correo,
+      nombre,
+      clave,
+      postal,
+      puntos: 0,
+    };
+    usuarios.push(nuevoUsuario);
     writeFileSync(archivo, JSON.stringify(usuarios, null, 2));
     return res
       .status(201)

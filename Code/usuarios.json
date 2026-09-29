@@ -27,5 +27,12 @@
     "nombre": "dsadad",
     "clave": "12345",
     "postal": "1428"
+  },
+  {
+    "correo": "dasdas@gmail.com",
+    "nombre": "12312313",
+    "clave": "123456",
+    "postal": "1428",
+    "puntos": 0
   }
 ]

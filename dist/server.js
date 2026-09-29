@@ -74,21 +74,24 @@ app.post("/api/register/nombre/button", (req, res) => {
     window.location.href = "/terceraprincipal2/signup_nombre";
     return res.status(201).json({ mensaje: "Nombre registrado correctamente" });
 });
-app.post("/api/register/clave/button", (req, res) => {
-    const { clave, clave_repetida } = req.body;
-    if (!clave || !clave_repetida) {
-        return res.status(400).json({ mensaje: "Porfavor escriba su clave" });
-    }
-    if (clave !== clave_repetida) {
-        return res.status(400).json({ mensaje: "Las claves no coinciden" });
-    }
-    datosUsuarioNuevo.push({
-        clave,
-    });
-    return res
-        .status(201)
-        .json({ mensaje: "Contraseña registrado correctamente" });
-});
+// app.post(
+//   "/api/register/clave/button",
+//   (req: Request<{}, {}, registroUsuario>, res: Response) => {
+//     const { clave } = req.body;
+//     if (!clave || !clave_repetida) {
+//       return res.status(400).json({ mensaje: "Porfavor escriba su clave" });
+//     }
+//     if (clave !== clave_repetida) {
+//       return res.status(400).json({ mensaje: "Las claves no coinciden" });
+//     }
+//     datosUsuarioNuevo.push({
+//       clave,
+//     });
+//     return res
+//       .status(201)
+//       .json({ mensaje: "Contraseña registrado correctamente" });
+//   },
+// );
 app.post("/api/register/postal/button", (req, res) => {
     const { postal } = req.body;
     if (!postal) {
@@ -164,7 +167,14 @@ app.post("/api/register/ubicacion/", (req, res) => {
             .json({ mensaje: "El nombre de usuario ya está registrado" });
     }
     // Guardar el nuevo usuario en usuarios.json
-    usuarios.push({ correo, nombre, clave, postal });
+    let nuevoUsuario = {
+        correo,
+        nombre,
+        clave,
+        postal,
+        puntos: 0,
+    };
+    usuarios.push(nuevoUsuario);
     writeFileSync(archivo, JSON.stringify(usuarios, null, 2));
     return res
         .status(201)
