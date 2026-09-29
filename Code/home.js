@@ -22,7 +22,7 @@ recusuario.innerHTML = "<span class='textousuario'>¡Hola, " + datoshome.usuario
 
  
   const recpuntoverde = document.querySelector(".puntocercano")
-  recpuntoverde.innerHTML = " <img src='../Assets/Assets/awards/6a620900f32618413220cc599df960da54dba604.png' alt='' class='imgmapa'>" +
+  recpuntoverde.innerHTML = " <img src='../../Assets/Assets/awards/6a620900f32618413220cc599df960da54dba604.png' alt='' class='imgmapa'>" +
 
    "<span class='puntoverdecercano'>Punto Verde Cercano </span>"  +
   "<span class='elpuntoverde'> " + `<svg class = 'imgpin' xmlns='http://www.w3.org/2000/svg' width='36' height='36' viewBox='0 0 36 36' fill='none'>

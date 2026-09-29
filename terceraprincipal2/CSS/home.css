@@ -1,340 +1,355 @@
-body {
-    background-color: #efefef;
-    height: 100vh;
-    margin: 0;
-  }
+  body {
+      background-color: #efefef;
+      height: 100vh;
+      margin: 0;
+    }
+   
 
-  .logo {
-    height: 100%;
-    aspect-ratio: 1/1;
-    margin-left: 1.4%;
-  }
-  .reciclametxt{
-    font-family: Nunito Sans;
-    font-weight: 700;
-    font-style: Bold;
-    font-size: 30px;
-    line-height: 100%;
-    letter-spacing: 0%;
-    color: #1F8527;
-    margin-left: 1%;
-    width: 20%;
-    margin-top: 2.1%;
-  }
-  .arribadeltodo {
-    height: 11%;
-    width: 100%;
-    background-color: #ffffff;
-    display: flex;
-  }
-  .contenedorabajo {
-    width: 100%;
-    height: 89%;
-    background-color: #ededed;
-    display: flex;
-    flex-wrap: wrap;
-  }
-  .verbeneficios {
-    width: 89%;
-    height: 26%;
-    background-color: #51d75c40;
-    box-shadow: 0px 2px 4px 0px #00000040;
-    border-radius: 18px;
-    margin: 5%;
-    display: flex;
-    cursor: pointer;
-  } 
-  .holausu {
-    height: 41%;
-    width: 100%;
-    background-color: #56A25C;
-    border: 2px solid #56A25C;
-    border-radius: 25px;
-    border-width: 2px;
-    opacity: 1;
-    margin-top: 4%;
-    margin-left: 2%;
-    display: flex;
-    flex-direction: column;
-  }
-    .textousuario {
+    .logo {
+      height: 100%;
+      aspect-ratio: 1/1;
+      margin-left: 1.4%;
+    }
+    .reciclametxt{
+      font-family: Nunito Sans;
+      font-weight: 700;
+      font-style: Bold;
+      font-size: 30px;
+      line-height: 100%;
+      letter-spacing: 0%;
+      color: #1F8527;
+      margin-left: 1%;
+      width: 20%;
+      margin-top: 2.1%;
+    }
+    .arribadeltodo {
+      height: 11%;
+      width: 100%;
+      background-color: #ffffff;
+      display: flex;
+    }
+        .textosarriba {
+      gap: 4%;
+      display: flex;
+      width: 100%;
+      height: 100%;
+      margin-top: 0%;
+      margin-left: 10%;
+    }
+    .parteactual {
+      font-family: Nunito Sans;
+      font-weight: 600;
+      font-style: SemiBold;
+      font-size: 30px;
+      line-height: 100%;
+      letter-spacing: 0%;
+      text-decoration: underline;
+      text-decoration-style: solid;
+      text-decoration-thickness: 0%;
+      text-decoration-skip-ink: auto;
+      color: #56a25c;
+      cursor: pointer;
+    }
+    .otraparte {
+      font-family: Nunito Sans;
+      font-weight: 600;
+      font-style: SemiBold;
+      font-size: 30px;
+      line-height: 100%;
+      letter-spacing: 0%;
+      color: #4a4857;
+      cursor: pointer;
+    }
+    .contenedorabajo {
+      width: 100%;
+      height: 89%;
+      background-color: #ededed;
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .verbeneficios {
+      width: 89%;
+      height: 26%;
+      background-color: #51d75c40;
+      box-shadow: 0px 2px 4px 0px #00000040;
+      border-radius: 18px;
+      margin: 5%;
+      display: flex;
+      cursor: pointer;
+    } 
+    .holausu {
+  height: 45%;
+  width: 100%;
+  background-color: #56A25C;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  border: 2px solid #56A25C;
+  border-radius: 25px;
+  opacity: 1;
+  margin-top: 3%;
+  margin-left: 2%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; 
+  padding-bottom: 3%;
+  box-sizing: border-box;
+}
+      .textousuario {
+      font-family: Inter;
+      font-weight: 400;
+      font-style: Regular;
+      font-size: 35px;
+      line-height: 100%;
+      letter-spacing: 0%;
+    margin-left: 4%;
+  margin-top: 2%; 
+  color: #FFFFFF;
+
+    }
+  .numeropuntos{
     font-family: Inter;
-    font-weight: 400;
-    font-style: Regular;
-    font-size: 35px;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 80px;
     line-height: 100%;
     letter-spacing: 0%;
-  margin-left: 4%;
-margin-top: 4%; 
-color: #FFFFFF;
+    margin-left: 3%;
+    margin-top: 2%;
+    color: white;
 
   }
-.numeropuntos{
-  font-family: Inter;
-  font-weight: 500;
-  font-style: Medium;
-  font-size: 80px;
+    .puntospuntos{
+      font-family: Inter;
+      font-weight: 600;
+      font-style: Semi Bold;
+      font-size: 35px;
+      line-height: 100%;
+      letter-spacing: 0%;
+      margin-left: 4%;
+      margin-top: 2%;
+      color: white;
+    }
+  .usubarra{
+  width: 90%;
+  height: 13%;
+  background-color: #51D75CB2;
+  margin-left: 4%;
+  border-radius: 10px;
+  margin-top: 3%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  }
+  .flechausubarra{
+    width: 3%;
+    height: 48%;
+    }
+  .cuantoestasemana{
+    color: #FFF;
+    -webkit-text-stroke-color: #1F8527;
+    font-family: "Nunito Sans";
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  .izquierda{
+  height: 100%;
+  width: 48%;
+  margin-left: 2% ;
+  }
+    
+    .quehacer {
+      width: 100%;
+      height: 45%;
+      background-color: #ffffff;
+      box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+
+      border: 2px solid #ffffff;
+      border-radius: 25px;
+      border-width: 2px;
+      opacity: 1;
+      margin-top: 2%;
+      margin-left: 2%;
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .hacertxt {
+      font-family: Nunito Sans;
+      font-weight: 600;
+      font-style: SemiBold;
+      font-size: 35px;
+      line-height: 100%;
+      letter-spacing: 0%;
+      margin-top: 3%;
+      margin-left: 4%;
+    }
+    .verbeneficios {
+      width: 92%;
+      height: 24%;
+      background-color: #51d75c40;
+      box-shadow: 0px 2px 4px 0px #00000040;
+      border-radius: 18px;
+      margin-left: 4%;
+      margin-top: -0.5%;
+      display: flex;
+      cursor: pointer;
+    align-items: center;
+  text-align: center;  }
+    .texto {
+      font-family: Nunito Sans;
+      font-weight: 600;
+      font-style: SemiBold;
+      font-size: 20px;
+      line-height: 100%;
+      letter-spacing: 0%;
+      margin-left: 20%;
+    }
+    .gift {
+      width: 12%;
+      aspect-ratio: 1/1;
+      margin: 1%;
+      margin-left: 3%;
+    }
+    .librito{
+    margin-left: 3%;
+    }
+    .cosobeneficio{
+    margin-left: 3%;
+    }
+    .flecha {
+      margin-right: 4%;
+      margin-left: auto;
+    }
+    .flecha2 {
+      width: 10%;
+      aspect-ratio: 1/1;
+      transform: rotate(180deg);
+      margin-right: 3%;
+      margin-left: auto;
+      fill: #1f8527;
+
+    }
+
+
+    .puntocercano {
+      width: 44%;
+      height: 93%;
+      background-color: #ffffff;
+      box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+      border: 2px solid #ffffff;
+      margin-top: 1.4%;
+      margin-left: 3%;
+      border-radius: 25px;
+      border-width: 2px;
+      opacity: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 1%;
+  box-sizing: border-box;
+}
+    
+    .abajoizquierda {
+      flex-direction: column;
+      width: 70%;
+      height: 100%;
+    }
+    .abajoderecha {
+      flex-direction: column;
+      width: 33%;
+      height: 93%;
+      margin: 0.7%;
+    }
+    .arribaabajoizquierda {
+      height: 36%;
+      width: 100%;
+      display: flex;
+      gap: 2%;
+      margin: 1%;
+    }
+
+    .home{
+    margin-left: 3%;
+    }
+    .imgmapa{
+      box-sizing: border-box;
+      width: 91%;
+      height: 43%;    
+      border: 1px solid #A6A6A6;
+      border-radius: 24px;
+      margin-left: 4.5%;
+      margin-top: 3%;
+        }
+    .puntoverdecercano{
+      font-family: Nunito Sans;
+  font-weight: 600;
+  font-style: SemiBold;
+  font-size: 33px;
   line-height: 100%;
   letter-spacing: 0%;
-  margin-left: 4%;
+  margin-left: 4.5%;
   margin-top: 3%;
-  color: white;
-
-}
-  .puntospuntos{
-    font-family: Inter;
-    font-weight: 600;
-    font-style: Semi Bold;
-    font-size: 35px;
-    line-height: 100%;
-    letter-spacing: 0%;
-    margin-left: 4%;
-    margin-top: 3%;
-    color: white;
-  }
-.usubarra{
-width: 90%;
-height: 13%;
-background-color: #51D75CB2;
-margin-left: 4%;
-border-radius: 10px;
-margin-top: 3%;
-display: flex;
-align-items: center;
-justify-content: center;
-}
-.flechausubarra{
-  width: 3%;
-  height: 48%;
-  }
-.cuantoestasemana{
-  color: #FFF;
-  -webkit-text-stroke-color: #1F8527;
-  font-family: "Nunito Sans";
-  font-size: 25px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-}
- .izquierda{
-height: 100%;
-width: 48%;
-margin-left: 2% ;
- }
-  
-  .quehacer {
-    width: 100%;
-    height: 48%;
-    background-color: #ffffff;
-    border: 2px solid #ffffff;
-    border-radius: 25px;
-    border-width: 2px;
-    opacity: 1;
-    margin-top: 2%;
-    margin-left: 2%;
-    display: flex;
-    flex-direction: column;
-  }
- 
-  .hacertxt {
+    }
+  .elpuntoverde{
     font-family: Nunito Sans;
     font-weight: 600;
     font-style: SemiBold;
-    font-size: 30px;
+    font-size: 26px;
     line-height: 100%;
     letter-spacing: 0%;
-    margin: 5%;
-  }
-  .verbeneficios {
-    width: 89%;
-    height: 26%;
-    background-color: #51d75c40;
-    box-shadow: 0px 2px 4px 0px #00000040;
-    border-radius: 18px;
-    margin-left: 5%;
-    margin-top: 0.1%;
-    display: flex;
-    cursor: pointer;
-    text-align: center;
-    align-items: center;
-  }
-  .texto {
-    font-family: Nunito Sans;
-    font-weight: 600;
-    font-style: SemiBold;
-    font-size: 20px;
-    line-height: 100%;
-    letter-spacing: 0%;
-    margin-left: 3%;
-  }
-  .gift {
-    width: 12%;
-    aspect-ratio: 1/1;
-    margin: 1%;
-    margin-left: 3%;
-  }
-  .flecha {
-    width: 10%;
-    aspect-ratio: 1/1;
-    transform: rotate(180deg);
-    margin-right: 3%;
-    margin-left: auto;
-    fill: #1f8527;
-    stroke: #1f8527;
-  }
-  .flecha2 {
-    width: 10%;
-    aspect-ratio: 1/1;
-    transform: rotate(180deg);
-    margin-right: 3%;
-    margin-left: auto;
-    fill: #1f8527;
-
-  }
-
-
-  .puntocercano {
-    width: 44%;
-    height: 92%;
-    background-color: #ffffff;
-    border: 2px solid #ffffff;
-    margin: 2%;
-    margin-left: 3%;
-    border-radius: 25px;
-    border-width: 2px;
-    opacity: 1;
-    display: flex;
-    flex-direction: column;
-  }
-  .abajoizquierda {
-    flex-direction: column;
-    width: 70%;
-    height: 100%;
-  }
-  .abajoderecha {
-    flex-direction: column;
-    width: 33%;
-    height: 93%;
-    margin: 0.7%;
-  }
-  .arribaabajoizquierda {
-    height: 36%;
-    width: 100%;
-    display: flex;
-    gap: 2%;
-    margin: 1%;
-  }
-  .textosarriba {
-    gap: 4%;
-    display: flex;
-    width: 100%;
-    height: 100%;
-    margin-top: 0%;
-    margin-left: 10%;
-  }
-  .parteactual {
-    font-family: Nunito Sans;
-    font-weight: 600;
-    font-style: SemiBold;
-    font-size: 30px;
-    line-height: 100%;
-    letter-spacing: 0%;
-    text-decoration: underline;
-    text-decoration-style: solid;
-    text-decoration-thickness: 0%;
-    text-decoration-skip-ink: auto;
-    color: #56a25c;
-    cursor: pointer;
-    margin-left: 3%;
-  }
-  .otraparte {
-    font-family: Nunito Sans;
-    font-weight: 600;
-    font-style: SemiBold;
-    font-size: 30px;
-    line-height: 100%;
-    letter-spacing: 0%;
-    color: #4a4857;
-    cursor: pointer;
-  }
-  .imgmapa{
-    box-sizing: border-box;
-    width: 91%;
-    height: 45%;    
-    border: 1px solid #A6A6A6;
-    border-radius: 24px;
+    color: #4A4857;
     margin-left: 4.5%;
     margin-top: 3%;
-      }
-  .puntoverdecercano{
-    font-family: Nunito Sans;
-font-weight: 600;
-font-style: SemiBold;
-font-size: 35px;
-line-height: 100%;
-letter-spacing: 0%;
-margin-left: 4.5%;
-margin-top: 3%;
   }
-.elpuntoverde{
-  font-family: Nunito Sans;
-  font-weight: 600;
-  font-style: SemiBold;
-  font-size: 28px;
-  line-height: 100%;
-  letter-spacing: 0%;
+  .metros{
+    font-family: Nunito Sans;
+    font-weight: 600;
+    font-style: SemiBold;
+    font-size: 50px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    margin-left: 4.5%;
+    margin-top: 3%;
+  }
+  .horario{
+    font-family: Nunito Sans;
+    font-weight: 600;
+    font-style: SemiBold;
+    font-size: 26px;
+    line-height: 100%;
+    letter-spacing: 0%;  
+    margin-left: 4.5%;
+    margin-top: 2%;
   color: #4A4857;
+  }
+  .verenelmapa{
+  width: 91%;
+  height: 8%;
+  margin-left: 25px;
+  background-color: #56A25C;
+  border-radius: 18px;
   margin-left: 4.5%;
-  margin-top: 3%;
-}
-.metros{
-  font-family: Nunito Sans;
-  font-weight: 600;
-  font-style: SemiBold;
-  font-size: 55px;
-  line-height: 100%;
-  letter-spacing: 0%;
-  margin-left: 4.5%;
-  margin-top: 3%;
-}
-.horario{
-  font-family: Nunito Sans;
-  font-weight: 600;
-  font-style: SemiBold;
-  font-size: 28px;
-  line-height: 100%;
-  letter-spacing: 0%;  
-  margin-left: 4.5%;
-  margin-top: 3%;
-color: #4A4857;
-}
-.verenelmapa{
-width: 91%;
-height: 8%;
-margin-left: 25px;
-background-color: #56A25C;
-border-radius: 18px;
-margin-left: 4.5%;
-display: flex;
-text-align: center;
-justify-content: center;
-align-items: center;
-color: #FFFFFF;
-margin-top: 3%;
-padding: 4px 0;
-cursor: pointer;
-}
-.verenelmapatxt{
-  font-family: Nunito Sans;
-  font-weight: 600;
-  font-style: SemiBold;
-  font-size: 26px;
-  line-height: 1;
-  letter-spacing: 0%;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
   color: #FFFFFF;
-}
-.imgpin{
-width: 6%;
-aspect-ratio: 1/1;
-margin-bottom:-1%;
-}
+  margin-top: 1%;
+  padding: 4px 0;
+  cursor: pointer;
+  }
+  .verenelmapatxt{
+    font-family: Nunito Sans;
+    font-weight: 600;
+    font-style: SemiBold;
+    font-size: 26px;
+    line-height: 1;
+    letter-spacing: 0%;
+    color: #FFFFFF;
+  }
+  .imgpin{
+  width: 6%;
+  aspect-ratio: 1/1;
+  margin-bottom:-1%;
+  }

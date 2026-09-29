@@ -6,26 +6,41 @@
     "postal": "1428"
   },
   {
-    "correo": "50417846d@est.ort.edu.ar",
-    "nombre": "dasjad",
-    "clave": "1",
-    "postal": "1428"
+    "correo": "prueba1@gmail.com",
+    "nombre": "wasdwasd",
+    "clave": "123456",
+    "postal": "1428",
+    "puntos": 0
   },
   {
-    "correo": "pene@gmail.com",
-    "nombre": "elmascapito",
-    "clave": "12345"
+    "correo": "prueba2@gmail.com",
+    "nombre": "Prueba2",
+    "clave": "12345t6",
+    "postal": "1428",
+    "puntos": 0
   },
   {
-    "correo": "dasdasdsa@",
-    "nombre": "ProbandoRegistro1",
-    "clave": "123131",
-    "postal": "1428"
+    "id": 2,
+    "correo": "prueba2ids@gmail.com",
+    "nombre": "12312313",
+    "clave": "asdadda",
+    "postal": "1321",
+    "puntos": 0
   },
   {
-    "correo": "ramiromaier@gmail.com",
-    "nombre": "dsadad",
-    "clave": "12345",
-    "postal": "1428"
+    "id": 3,
+    "correo": "ahaha@gmail.com",
+    "nombre": "asas",
+    "clave": "sasasa",
+    "postal": "1428",
+    "puntos": 0
+  },
+  {
+    "id": 4,
+    "correo": "sasa@gmail.com",
+    "nombre": "lu",
+    "clave": "lululululululu",
+    "postal": "1428",
+    "puntos": 0
   }
 ]

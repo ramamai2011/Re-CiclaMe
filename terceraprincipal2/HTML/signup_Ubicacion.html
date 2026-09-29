@@ -84,53 +84,61 @@
         const respuesta_registro =
           document.getElementById("respuesta_registro");
 
-        button.addEventListener("click", async () => {
-          try {
-            const postal = document.getElementById("postal").value;
-            const nombreUsuario = sessionStorage.getItem("nombreRegistro");
-            const correo = sessionStorage.getItem("correoRegistro");
-            const contra = sessionStorage.getItem("contraseña");
+          button.addEventListener("click", async () => {
+  try {
+    const postal = document.getElementById("postal").value;
+    const nombreUsuario = sessionStorage.getItem("nombreRegistro");
+    const correo = sessionStorage.getItem("correoRegistro");
+    const contra = sessionStorage.getItem("contraseña");
 
-            const respuesta = await fetch(
-              "http://localhost:3000/api/register/ubicacion/",
-              {
-                method: "POST",
-                headers: {
-                  "Content-Type": "application/json",
-                },
-                body: JSON.stringify({
-                  postal,
-                  nombre: nombreUsuario,
-                  correo,
-                  clave: contra,
-                }),
-              },
-            );
+    console.log("Datos enviados al servidor:", {
+      postal,
+      nombreUsuario,
+      correo,
+      contra,
+    });
 
-            const datos = await respuesta.json();
+    const respuesta = await fetch(
+      "http://localhost:3000/api/register/ubicacion/",
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          postal,
+          nombre: nombreUsuario,
+          correo,
+          clave: contra,
+        }),
+      },
+    );
 
-            if (!respuesta.ok) {
-              respuesta_registro.innerHTML =
-                datos.mensaje || "Error en la solicitud.";
-              return;
-            }
+    console.log("Estado de la respuesta:", respuesta.status);
 
-            if (respuesta.status === 201) {
-              sessionStorage.clear();
-              window.location.href = new URL(
-                "home.html",
-                window.location.href,
-              ).toString();
-              return;
-            }
+    const datos = await respuesta.json();
+    console.log("Respuesta del servidor:", datos);
 
-            respuesta_registro.innerHTML = datos.mensaje;
-          } catch (error) {
-            console.error("Error al enviar el correo:", error);
-            respuesta_registro.innerHTML =
-              "Hubo un error al registrar el correo.";
-          }
-        });
+    if (!respuesta.ok) {
+      respuesta_registro.innerHTML =
+        datos.mensaje || "Error en la solicitud.";
+      return;
+    }
+
+    if (respuesta.status === 201) {
+      console.log("Registro exitoso. Redirigiendo a home.html...");
+      sessionStorage.clear();
+      window.location.href = "home.html"; // Asegúrate de que esta ruta sea correcta
+      return;
+    }
+
+    respuesta_registro.innerHTML = datos.mensaje;
+  } catch (error) {
+    console.error("Error al enviar el correo:", error);
+    respuesta_registro.innerHTML =
+      "Hubo un error al registrar el correo.";
+  }
+});
       </script>
     </div>
   </body>
