@@ -263,3 +263,6 @@ app.post(
       .json({ mensaje: "Usuario registrado correctamente" });
   },
 );
+
+
+
