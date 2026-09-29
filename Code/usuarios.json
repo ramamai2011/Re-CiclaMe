@@ -18,5 +18,13 @@
     "clave": "12345t6",
     "postal": "1428",
     "puntos": 0
+  },
+  {
+    "id": 2,
+    "correo": "prueba2ids@gmail.com",
+    "nombre": "12312313",
+    "clave": "asdadda",
+    "postal": "1321",
+    "puntos": 0
   }
 ]
