@@ -26,5 +26,21 @@
     "clave": "asdadda",
     "postal": "1321",
     "puntos": 0
+  },
+  {
+    "id": 3,
+    "correo": "ahaha@gmail.com",
+    "nombre": "asas",
+    "clave": "sasasa",
+    "postal": "1428",
+    "puntos": 0
+  },
+  {
+    "id": 4,
+    "correo": "sasa@gmail.com",
+    "nombre": "lu",
+    "clave": "lululululululu",
+    "postal": "1428",
+    "puntos": 0
   }
 ]

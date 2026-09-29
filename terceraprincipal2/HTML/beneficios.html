@@ -22,28 +22,25 @@
     <img class="logo" src="../../Assets/Assets/brand/logo-sintext.png" alt="logo">
     <p class="reciclametxt">Re-CiclaMe</p>
     <div class="textosarriba">
-    <p class="otraparte home" onclick="window.location.href='Home.html'">Inicio</p>
+    <p class="otraparte" onclick="window.location.href='Home.html'">Inicio</p>
     <p class="otraparte"   onclick="window.location.href='Reciclar.html'">Reciclar</p>
     <p class="parteactual"   onclick="window.location.href='Beneficios.html'">Beneficios</p>
     <p class="otraparte"   onclick="window.location.href='Historial.html'">Historial</p> </div>
 </div>
 <div class="contenedorabajo">
-  <div class="filaheader">
-    <div class="titulosizquierda">
       <p class="beneficiosdisponibles">Beneficios disponibles</p>
       <p class="usapuntos">Usá tus puntos y obtené premios y beneficios.</p>
-    </div>
-    <div class="puntosdisponibles">
+
+      <div class="puntosdisponibles">
       <svg class="trofeo" xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 27 27" fill="none">
   <path d="M4.75 3.5C4.75 2.83696 5.01339 2.20107 5.48223 1.73223C5.95107 1.26339 6.58696 1 7.25 1H19.75C20.413 1 21.0489 1.26339 21.5178 1.73223C21.9866 2.20107 22.25 2.83696 22.25 3.5V9.75C22.25 12.0706 21.3281 14.2962 19.6872 15.9372C18.0462 17.5781 15.8206 18.5 13.5 18.5C11.1794 18.5 8.95376 17.5781 7.31282 15.9372C5.67187 14.2962 4.75 12.0706 4.75 9.75V3.5ZM9.75 26H17.25L13.5 19.75L9.75 26Z" stroke="#1F8527" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
   <path d="M4.75 3.5H3.5C2.83696 3.5 2.20107 3.76339 1.73223 4.23223C1.26339 4.70107 1 5.33696 1 6V7.54875C0.99998 8.45748 1.24761 9.34903 1.71628 10.1276C2.18495 10.9061 2.85693 11.5422 3.66 11.9675L5.375 12.875M22.25 3.5H23.5C24.163 3.5 24.7989 3.76339 25.2678 4.23223C25.7366 4.70107 26 5.33696 26 6V6.79625C26.0001 7.93221 25.6906 9.04671 25.1047 10.02C24.5189 10.9932 23.6789 11.7884 22.675 12.32L21.625 12.875" stroke="#1F8527" stroke-width="2" stroke-linejoin="round"/>
 </svg>
       <p class="txtpuntosdisponibles">67 Puntos disponibles</p>
-    </div>
   </div>
 
   <div class="filtros">
-    <div class="filtro filtroactivo">
+        <div class="filtro">
 <svg class="filtroimg" xmlns="http://www.w3.org/2000/svg" width="24" height="23" viewBox="0 0 24 23" fill="none">
   <path d="M10.5824 2.133C10.9024 1.289 12.1134 1.289 12.4344 2.133L14.5044 7.867C14.5766 8.05379 14.7038 8.21428 14.8691 8.3273C15.0344 8.44031 15.2301 8.50053 15.4304 8.5H20.5174C21.4574 8.5 21.8674 9.67 21.1284 10.243L17.5084 13.5C17.3465 13.6249 17.2281 13.7977 17.1703 13.9938C17.1125 14.1899 17.1181 14.3993 17.1864 14.592L18.5084 20.195C18.8304 21.095 17.7884 21.868 17.0004 21.314L12.0834 18.194C11.915 18.0757 11.7142 18.0122 11.5084 18.0122C11.3026 18.0122 11.1018 18.0757 10.9334 18.194L6.01638 21.314C5.22938 21.868 4.18638 21.094 4.50838 20.195L5.83038 14.592C5.89864 14.3993 5.90426 14.1899 5.84643 13.9938C5.78861 13.7977 5.67029 13.6249 5.50838 13.5L1.88838 10.243C1.14838 9.67 1.56038 8.5 2.49838 8.5H7.58538C7.78564 8.50053 7.98135 8.44031 8.14667 8.3273C8.312 8.21428 8.43916 8.05379 8.51138 7.867L10.5824 2.133Z" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>      <p>Todos</p>
@@ -71,18 +68,8 @@
     </div>
   </div>
 
-  <div class="gridbeneficios">
-    <div class="cardbeneficio">
-      <svg class="iconobeneficio" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none"><path d="M4 21V9L12 3L20 9V21H4Z" stroke="#1F8527" stroke-width="2"/></svg>
-      <p class="titulobeneficio">Beneficio</p>
-      <p class="descbeneficio">Descripción breve del beneficio.</p>
-      <div class="filapuntaje">
-        <p class="puntajebeneficio">Puntaje</p>
-        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M5 12H19M12 5L19 12L12 19" stroke="#1F8527" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-      </div>
-    </div>
-    <!-- repetir .cardbeneficio para cada beneficio -->
-  </div>
+<div class="tarjetabenedficio"></div>
+
 </div>
    </body>
 </html>
