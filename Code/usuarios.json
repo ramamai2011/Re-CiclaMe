@@ -42,5 +42,37 @@
     "clave": "lululululululu",
     "postal": "1428",
     "puntos": 0
+  },
+  {
+    "id": 5,
+    "correo": "prueba3@gmail.com",
+    "nombre": "prueba3",
+    "clave": "123456",
+    "postal": "1428",
+    "puntos": 0
+  },
+  {
+    "id": 6,
+    "correo": "prueba4@gmail.com",
+    "nombre": "lukamersichdown",
+    "clave": "123456789",
+    "postal": "1428",
+    "puntos": 0
+  },
+  {
+    "id": 7,
+    "correo": "prueba5@gmail.com",
+    "nombre": "huhuhuhu",
+    "clave": "12331",
+    "postal": "1428",
+    "puntos": 0
+  },
+  {
+    "id": 8,
+    "correo": "prueba6@gmail.com",
+    "nombre": "lukamersichdownn",
+    "clave": "1123456",
+    "postal": "1428",
+    "puntos": 0
   }
 ]
