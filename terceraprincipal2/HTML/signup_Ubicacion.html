@@ -127,6 +127,7 @@
 
     if (respuesta.status === 201) {
       console.log("Registro exitoso. Redirigiendo a home.html...");
+      localStorage.setItem("correoUsuario", correo);
       sessionStorage.clear();
       window.location.href = "home.html"; // Asegúrate de que esta ruta sea correcta
       return;
