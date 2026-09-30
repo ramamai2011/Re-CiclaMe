@@ -31,11 +31,7 @@
   <body>
     <div class="cuadradoentero">
       <div class="reccontitulos">
-        <img
-          class="logo"
-          src="/Assets/Assets/brand/logo-sintext.png"
-          alt=""
-        />
+        <img class="logo" src="/Assets/Assets/brand/logo-sintext.png" alt="" />
         <p class="titulo">Re-CiclaMe</p>
         <p id="usuario_nombre" class="bienvenido">@usuario</p>
       </div>
@@ -79,8 +75,7 @@
       </button>
       <h3 id="respuesta_registro"></h3>
       <script>
-        const respuestaRegistro =
-        document.getElementById("respuesta_registro");
+        const respuestaRegistro = document.getElementById("respuesta_registro");
         const usuario = document.getElementById("usuario_nombre");
         const parametrosUrl = new URLSearchParams(window.location.search);
         const correoUrl = parametrosUrl.get("correo");
@@ -92,8 +87,7 @@
           window.history.replaceState(null, "", urlLimpia);
         }
 
-        const correo =
-          correoUrl || sessionStorage.getItem("correoLogin");
+        const correo = correoUrl || sessionStorage.getItem("correoLogin");
 
         async function cargarNombreUsuario() {
           if (!correo) {
@@ -132,46 +126,49 @@
         cargarNombreUsuario();
       </script>
 
-<script>
-  const botonsiguiente = document.getElementById("botonsiguiente");
-  const respuestaregistro = document.getElementById("respuesta_registro");
+      <script>
+        const botonsiguiente = document.getElementById("botonsiguiente");
+        const respuestaregistro = document.getElementById("respuesta_registro");
 
-  botonsiguiente.addEventListener("click", async () => {
-    const correo = sessionStorage.getItem("correoLogin");
-    const contraseña = document.getElementById("contraseña").value;
+        botonsiguiente.addEventListener("click", async () => {
+          const correo = sessionStorage.getItem("correoLogin");
+          const contraseña = document.getElementById("contraseña").value;
 
-    if (!correo || !contraseña) {
-      respuestaregistro.textContent = "Por favor, completa todos los campos.";
-      return;
-    }
+          if (!correo || !contraseña) {
+            respuestaregistro.textContent =
+              "Por favor, completa todos los campos.";
+            return;
+          }
 
-    try {
-      const respuesta = await fetch("http://localhost:3000/api/login/button", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ correo, clave: contraseña }),
-      });
+          try {
+            const respuesta = await fetch(
+              "http://localhost:3000/api/login/button",
+              {
+                method: "POST",
+                headers: {
+                  "Content-Type": "application/json",
+                },
+                body: JSON.stringify({ correo, clave: contraseña }),
+              },
+            );
 
-      const datos = await respuesta.json();
+            const datos = await respuesta.json();
 
-      if (!respuesta.ok) {
-        respuestaregistro.textContent = datos.mensaje || "Error al iniciar sesión.";
-        return;
-      }
+            if (!respuesta.ok) {
+              respuestaregistro.textContent =
+                datos.mensaje || "Error al iniciar sesión.";
+              return;
+            }
 
-      // Guardar el correo en sessionStorage y redirigir
-      sessionStorage.setItem("correoLogin", correo);
-      window.location.href = "/terceraprincipal2/HTML/home.html";
-    } catch (error) {
-      console.error("Error al iniciar sesión:", error);
-      respuestaregistro.textContent = "Hubo un error al iniciar sesión.";
-    }
-  });
-</script>
-
-
+            // Guardar el correo en localStorage después de iniciar sesión
+            localStorage.setItem("correoUsuario", correo);
+            window.location.href = "/terceraprincipal2/HTML/home.html";
+          } catch (error) {
+            console.error("Error al iniciar sesión:", error);
+            respuestaregistro.textContent = "Hubo un error al iniciar sesión.";
+          }
+        });
+      </script>
     </div>
   </body>
 </html>
