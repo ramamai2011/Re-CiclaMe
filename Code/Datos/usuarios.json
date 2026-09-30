@@ -89,7 +89,16 @@
     "nombre": "676767",
     "clave": "676767",
     "postal": "1428",
-    "puntos": 0,  
+    "puntos": 0,
+    "rol": "ciudadano"
+  },
+  {
+    "id": 11,
+    "correo": "sadsadsas@gmail.com",
+    "nombre": "mercho",
+    "clave": "lukaaaa",
+    "postal": "1428",
+    "puntos": 0,
     "rol": "ciudadano"
   }
 ]
