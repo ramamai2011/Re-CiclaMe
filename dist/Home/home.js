@@ -1,5 +1,13 @@
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
+var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
+    function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
+    return new (P || (P = Promise))(function (resolve, reject) {
+        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
+        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
+        function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+    });
+};
 const datosHome = {
     usuario: "Usuario",
     puntos: 100,
@@ -32,10 +40,7 @@ L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
 }).addTo(mapa);
 function mostrarPuntosCercanos(ubicacion) {
     const cercanos = puntosVerdes
-        .map((punto) => ({
-        ...punto,
-        distancia: ubicacion.distanceTo(L.latLng(punto.latitud, punto.longitud)),
-    }))
+        .map((punto) => (Object.assign(Object.assign({}, punto), { distancia: ubicacion.distanceTo(L.latLng(punto.latitud, punto.longitud)) })))
         .filter((punto) => punto.distancia <= 5000)
         .sort((a, b) => a.distancia - b.distancia);
     capaPuntos.clearLayers();
@@ -90,26 +95,28 @@ function convertirPunto(valor) {
             : "Horario no informado",
     };
 }
-async function cargarPuntosVerdes() {
-    try {
-        const respuesta = await fetch("../../Code/puntos_verdes.json");
-        if (!respuesta.ok) {
-            throw new Error("No se pudo leer puntos_verdes.json");
+function cargarPuntosVerdes() {
+    return __awaiter(this, void 0, void 0, function* () {
+        try {
+            const respuesta = yield fetch("../../Code/puntos_verdes.json");
+            if (!respuesta.ok) {
+                throw new Error("No se pudo leer puntos_verdes.json");
+            }
+            const datos = yield respuesta.json();
+            puntosVerdes = Array.isArray(datos)
+                ? datos
+                    .map(convertirPunto)
+                    .filter((punto) => punto !== undefined)
+                : [];
+            mostrarPuntosCercanos(referencia);
+            usarMiUbicacion();
         }
-        const datos = await respuesta.json();
-        puntosVerdes = Array.isArray(datos)
-            ? datos
-                .map(convertirPunto)
-                .filter((punto) => punto !== undefined)
-            : [];
-        mostrarPuntosCercanos(referencia);
-        usarMiUbicacion();
-    }
-    catch (error) {
-        console.error("Error al cargar puntos verdes:", error);
-        obtenerElemento("nombre-punto-verde").textContent =
-            "No se pudieron cargar los puntos verdes";
-    }
+        catch (error) {
+            console.error("Error al cargar puntos verdes:", error);
+            obtenerElemento("nombre-punto-verde").textContent =
+                "No se pudieron cargar los puntos verdes";
+        }
+    });
 }
 function usarMiUbicacion() {
     if (!navigator.geolocation) {
@@ -123,7 +130,7 @@ function usarMiUbicacion() {
             coords.longitude,
         ];
         mapa.setView(ubicacion, 15);
-        marcadorUsuario?.remove();
+        marcadorUsuario === null || marcadorUsuario === void 0 ? void 0 : marcadorUsuario.remove();
         marcadorUsuario = L.circleMarker(ubicacion, {
             radius: 9,
             color: "#ffffff",
@@ -141,4 +148,3 @@ function usarMiUbicacion() {
 }
 obtenerElemento("usar-ubicacion").addEventListener("click", usarMiUbicacion);
 void cargarPuntosVerdes();
-//# sourceMappingURL=home.js.map

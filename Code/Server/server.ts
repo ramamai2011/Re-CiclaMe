@@ -16,9 +16,10 @@ interface registroUsuario {
   clave: string;
   postal: string;
   puntos: number;
+  rol: string
 }
 
-const archivo = "./Code/usuarios.json";
+const archivo = "Code/Datos/usuarios.json";
 const contenido = readFileSync(archivo, "utf-8");
 const usuarios = contenido.trim() ? JSON.parse(contenido) : [];
 let datosUsuarioNuevo: Partial<registroUsuario>[] = [];
@@ -264,6 +265,7 @@ app.post(
       clave,
       postal,
       puntos: 0,
+      rol: "ciudadano"
     };
     usuarios.push(nuevoUsuario);
     writeFileSync(archivo, JSON.stringify(usuarios, null, 2));
@@ -325,3 +327,5 @@ app.post(
     });
   },
 );
+
+

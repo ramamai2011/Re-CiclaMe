@@ -1,13 +1,9 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-const express = require("express");
-const cors = require("cors");
 const { readFileSync, writeFileSync } = require("fs");
 const app = express();
 const PORT = 3000;
 app.use(cors());
 app.use(express.json());
-const archivo = "./Code/usuarios.json";
+const archivo = "Code/Datos/usuarios.json";
 const contenido = readFileSync(archivo, "utf-8");
 const usuarios = contenido.trim() ? JSON.parse(contenido) : [];
 let datosUsuarioNuevo = [];
@@ -178,6 +174,7 @@ app.post("/api/register/ubicacion/", (req, res) => {
         clave,
         postal,
         puntos: 0,
+        rol: "ciudadano"
     };
     usuarios.push(nuevoUsuario);
     writeFileSync(archivo, JSON.stringify(usuarios, null, 2));
@@ -217,4 +214,4 @@ app.post("/api/usuario/datos", (req, res) => {
         puntos: usuario.puntos,
     });
 });
-//# sourceMappingURL=server.js.map
+export {};

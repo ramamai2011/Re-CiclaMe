@@ -74,5 +74,22 @@
     "clave": "1123456",
     "postal": "1428",
     "puntos": 0
+  },
+  {
+    "id": 9,
+    "correo": "pruebaRoles@gmail.com",
+    "nombre": "probandoRoles",
+    "clave": "123456",
+    "postal": "1428",
+    "puntos": 0
+  },
+  {
+    "id": 10,
+    "correo": "prueeeeba@gmail.com",
+    "nombre": "676767",
+    "clave": "676767",
+    "postal": "1428",
+    "puntos": 0,  
+    "rol": "ciudadano"
   }
 ]
