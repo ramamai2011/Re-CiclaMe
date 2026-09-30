@@ -3,9 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    />
     <link rel="stylesheet" href="../CSS/home.css" />
     <title>Document</title>
     <script src="../../Code/Main/app.js" defer></script>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" defer></script>
     <script src="../../Code/home.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -128,11 +133,44 @@
         </div>
       </div>
       <div class="puntocercano">
-        <img
-          src="../../Assets/Assets/awards/6a620900f32618413220cc599df960da54dba604.png"
-          alt=""
+        <div
+          id="mapa-puntos-verdes"
           class="imgmapa"
-        />
+          aria-label="Mapa interactivo de puntos verdes"
+        ></div>
+        <span class="puntoverdecercano">Punto Verde Cercano</span>
+        <span class="elpuntoverde">
+          <svg
+            class="imgpin"
+            xmlns="http://www.w3.org/2000/svg"
+            width="36"
+            height="36"
+            viewBox="0 0 36 36"
+            fill="none"
+            aria-hidden="true"
+          >
+            <path
+              d="M18 19.5C20.4853 19.5 22.5 17.4853 22.5 15C22.5 12.5147 20.4853 10.5 18 10.5C15.5147 10.5 13.5 12.5147 13.5 15C13.5 17.4853 15.5147 19.5 18 19.5Z"
+              stroke="#1F8527"
+              stroke-width="3"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M9.51472 6.51472C11.7652 4.26428 14.8174 3 18 3C21.1826 3 24.2348 4.26428 26.4853 6.51472C28.7357 8.76516 30 11.8174 30 15C30 17.838 29.397 19.695 27.75 21.75L18 33L8.25 21.75C6.603 19.695 6 17.838 6 15C6 11.8174 7.26428 8.76516 9.51472 6.51472Z"
+              stroke="#1F8527"
+              stroke-width="3"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+          <span id="nombre-punto-verde">Cargando puntos verdes...</span>
+        </span>
+        <span class="metros" id="distancia-punto-verde"></span>
+        <span class="horario" id="horario-punto-verde"></span>
+        <button class="verenelmapa" id="usar-ubicacion" type="button">
+          <span class="verenelmapatxt">Ver en el mapa</span>
+        </button>
       </div>
     </div>
     <script>

@@ -5,6 +5,7 @@
   "scripts": {
     "start": "ts-node Code/server.ts",
     "dev": "ts-node --watch Code/server.ts",
+    "build:home": "tsc Code/home.ts --ignoreConfig --target ES2022 --lib DOM,ES2022 --module ES2022 --outDir Code --rootDir Code --skipLibCheck --strict",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

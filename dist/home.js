@@ -1,4 +1,5 @@
 "use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
 const datosHome = {
     usuario: "Usuario",
     puntos: 100,
@@ -140,3 +141,4 @@ function usarMiUbicacion() {
 }
 obtenerElemento("usar-ubicacion").addEventListener("click", usarMiUbicacion);
 void cargarPuntosVerdes();
+//# sourceMappingURL=home.js.map
