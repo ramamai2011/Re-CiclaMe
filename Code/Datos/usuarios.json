@@ -100,5 +100,23 @@
     "postal": "1428",
     "puntos": 0,
     "rol": "ciudadano"
+  },
+  {
+    "id": 12,
+    "correo": "ojojsaosj@gmail.com",
+    "nombre": "lasa",
+    "clave": "12345",
+    "postal": "1428",
+    "puntos": 0,
+    "rol": "ciudadano"
+  },
+  {
+    "id": 13,
+    "correo": "assa@gmail.com",
+    "nombre": "asasasa",
+    "clave": "asasasasassasa",
+    "postal": "1428",
+    "puntos": 0,
+    "rol": "ciudadano"
   }
 ]
