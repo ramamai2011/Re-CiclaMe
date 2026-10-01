@@ -1,0 +1,62 @@
+[
+  {
+    "correo": "prueba@gmail.com",
+    "nombre": "hola",
+    "clave": "123",
+    "postal": "1428"
+  },
+  {
+    "correo": "prueba1@gmail.com",
+    "nombre": "wasdwasd",
+    "clave": "123456",
+    "postal": "1428",
+    "puntos": 0
+  },
+  {
+    "correo": "prueba2@gmail.com",
+    "nombre": "Prueba2",
+    "clave": "12345t6",
+    "postal": "1428",
+    "puntos": 0
+  },
+  {
+    "id": 2,
+    "correo": "prueba2ids@gmail.com",
+    "nombre": "12312313",
+    "clave": "asdadda",
+    "postal": "1321",
+    "puntos": 0
+  },
+  {
+    "id": 3,
+    "correo": "ahaha@gmail.com",
+    "nombre": "asas",
+    "clave": "sasasa",
+    "postal": "1428",
+    "puntos": 0
+  },
+  {
+    "id": 4,
+    "correo": "sasa@gmail.com",
+    "nombre": "lu",
+    "clave": "lululululululu",
+    "postal": "1428",
+    "puntos": 0
+  },
+  {
+    "id": 5,
+    "correo": "asakhdskadshkdsh@gmail.com",
+    "nombre": "adasdsa",
+    "clave": "12345",
+    "postal": "1428",
+    "puntos": 0
+  },
+  {
+    "id": 6,
+    "correo": "asahdskadshkdsh@gmail.com",
+    "nombre": "wq",
+    "clave": "1wwqq",
+    "postal": "1428",
+    "puntos": 0
+  }
+]

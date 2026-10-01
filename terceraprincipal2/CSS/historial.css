@@ -93,6 +93,7 @@ overflow: hidden;
   line-height: 100%;
   letter-spacing: 0%;
   color: #000;
+  margin-top: 0;
 }
 
 .revisaentregas {
@@ -151,4 +152,29 @@ margin-top: 1vh;
   line-height: 100%;
   letter-spacing: 0%;
   margin-left: 10%;
+    margin-bottom: 1.05%;
+      margin-top: auto;
+}
+.puntoverdetxt{
+  color: #000;
+font-family: "Nunito Sans";
+font-size: 22px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+  margin-bottom: 1%;
+    margin-top: auto;
+    margin-left: 10%;
+}
+.fecha{
+  color: #000;
+font-family: "Nunito Sans";
+font-size: 22px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+  margin-bottom: 1%;
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: 10%;
 }

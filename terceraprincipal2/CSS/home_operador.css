@@ -49,6 +49,7 @@
       text-decoration-skip-ink: auto;
       color: #56a25c;
       cursor: pointer;
+      margin-left: 30%;
     }
     .otraparte {
       font-family: Nunito Sans;
@@ -59,6 +60,13 @@
       letter-spacing: 0%;
       color: #4a4857;
       cursor: pointer;
+    }
+    .home{
+      margin-left: 30%;
+     
+    }
+    .historialarriba{
+      margin-left: 30%;
     }
     .contenedorabajo {
       width: 100%;
