@@ -1,0 +1,100 @@
+body{
+height: 100vh;
+background-color: #ededed;
+background: rgba(236, 236, 236, 0.65);
+overflow: hidden;
+}
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+.contenedorentero{
+width: 54%;
+height: 66%;
+border-radius: 30px;
+background-color: #FFF;
+box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+margin-left: 23%;
+margin-top: 9%;
+padding-top: 1%;
+}
+.detalleoperacion{
+    color: #000;
+    font-family: "Nunito Sans";
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-left: 3%;
+    margin-bottom: 2%;
+}
+.elementoseleccionado{
+width: 94%;
+height: 10.5%;
+background: #F6F6F6;
+box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.25);
+margin-left: 3%;
+margin-top: 2%;
+display: flex;
+align-items: center;
+}
+.observacion{
+height: 9%;
+width: 94%;
+margin-left: 3%;
+border-radius: 9px;
+background: #EDEDED;
+box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+margin-top: 3%;
+}
+.terminartransaccion{
+    width: 94%;
+    margin-left: 3%;
+    height: 10.5%;
+    border-radius: 18px;
+background: #56A25C;
+margin-top: 4%;
+border: solid  #56A25C ;
+cursor: pointer;
+}
+.terminartxt{
+    color: #FFF;
+    font-family: "Nunito Sans";
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+.fotoelemento{
+height: 70%;
+aspect-ratio: 1/1;
+background: #D9D9D9;
+margin-left: 2%;
+}
+.elementotxt{
+    color: #000;
+    font-family: "Nunito Sans";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-left: 3%;
+}
+.masxpuntos{
+    color: #1F8527;
+    font-family: "Nunito Sans";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-left: 30%;
+    margin-right: 2%;
+}
+
+/*¨
+  <div class="fotoelemento"></div>
+            <p class="elementotxt">XXXg de “elemento seleccionado”</p>
+            <p class="masxpuntos">+Xpts</p>
+            <svg class="tacho"
