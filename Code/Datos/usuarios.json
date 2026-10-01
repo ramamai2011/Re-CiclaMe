@@ -118,5 +118,14 @@
     "postal": "1428",
     "puntos": 0,
     "rol": "ciudadano"
+  },
+  {
+    "id": 14,
+    "correo": "nxkaskaksa@gmail.com",
+    "nombre": "fasas",
+    "clave": "afsaosfaho",
+    "postal": "1428",
+    "puntos": 0,
+    "rol": "ciudadano"
   }
 ]

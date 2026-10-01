@@ -2,6 +2,7 @@
       background-color: #efefef;
       height: 100vh;
       margin: 0;
+      overflow: hidden;
     }
    *{
     margin: 0;
@@ -227,7 +228,7 @@ margin-left: auto;
     
     .cargarpuntosdiv {
       width: 95.6%;
-      height: 45%;
+      height: 55%;
       background-color: #ffffff;
       box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
 
@@ -239,12 +240,24 @@ margin-left: auto;
       display: flex;
       flex-direction: column;
     }
+    .cargarproductostxt{
+      color: #000;
+font-family: "Nunito Sans";
+font-size: 25px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+margin-left: 3%;
+margin-top: 1%;
+    }
     .filtros{
     width: 100%;
-    height: 11%;
+    height: 12%;
     display: flex;
-    gap: 1%;
-    }
+    gap: 0.5%;
+    margin-left: 3%;
+    margin-top: 1%;
+  }
   .filtro{
     display: flex;
     padding: 5px 10px;
@@ -260,3 +273,125 @@ border-radius: 25px;
 border: 1px solid #000;
 background: #FFF;
   }
+.filtrotxt{
+  color: #000;
+  font-family: "Nunito Sans";
+  font-size: 23px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.todoslosproductos{
+  width: 100%;
+  height: 57%;
+  display: flex;
+}
+.recproducto{
+width: 17%;
+height: 100%;
+display: flex;
+flex-direction: column;
+border-radius: 25px;
+background: #FFF;
+box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+margin-left: 3%;
+margin-top: 1.5%;
+}
+.fotomaterial{
+height: 22%;
+width: 22%;
+aspect-ratio: 1/1;
+border-radius: 8px;
+border: 1px solid #D2D2D2;
+background: #F2F2F2;
+margin-left: 3%;
+margin-top: 7%;
+}
+.materialtxt{
+  color: #000;
+  font-family: "Nunito Sans";
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-left: 32%;
+  margin-top: -18%;
+}
+.masxpuntosabajo{
+  color: #1F8527;
+  font-family: "Nunito Sans";
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-left: 32%;
+}
+.mas{
+  color: #000;
+  font-family: "Nunito Sans";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-right: 5%;
+  margin-left: auto;
+}
+.menos{
+  color: #000;
+  font-family: "Nunito Sans";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-left: 5%;
+  margin-right: auto;
+}
+.detalle{
+  color: #4A4857;
+  font-family: "Nunito Sans";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-left: 3%;
+  margin-top: 3%;
+}
+.recgramos{
+width: 94%;
+height: 17%;
+border-radius: 9px;
+background: rgba(221, 221, 221, 0.87);
+background-color: #DDDDDDDD;
+margin-left: 3%;
+margin-top: 7%;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.gramos{
+  color: #000;
+  font-family: "Nunito Sans";
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.recagregar{
+width: 94%;
+height: 12%;
+border-radius: 9px;
+background-color: #56A25C;
+margin-left: 3%;
+margin-top: 4%;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.agregartxt{
+  color: #FFF;
+  font-family: "Nunito Sans";
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
