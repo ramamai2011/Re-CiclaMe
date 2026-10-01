@@ -121,7 +121,7 @@ margin-top: -2%;
       height: 31%;
       border-radius: 25px;
       background: #56A25C;
-      margin-top: 1.4%;
+      margin-top: 3%;
       margin-left: 3%;
       border-width: 2px;
       opacity: 1;
@@ -130,6 +130,7 @@ margin-top: -2%;
       padding-bottom: 1%;
       box-sizing: border-box;
       margin-top: 3%;
+
     }
     .masxpuntos{
       -webkit-text-stroke-width: 5px;
@@ -140,7 +141,7 @@ margin-top: -2%;
       font-style: normal;
       font-weight: 500;
       line-height: normal;
-      margin-top: 2%;
+      margin-top: 1%;
       margin-left: 3%;
     }
     .totalasignar{
@@ -152,9 +153,35 @@ margin-top: -2%;
       font-style: normal;
       font-weight: 500;
       line-height: normal;
-      margin-top: -7%;
+      margin-top: -8%;
       margin-left: 3%;
     }
+    .verdetalle{
+    width: 67%;
+    height: 25%;
+    border-radius: 18px;
+border: 1px solid #4A4857;
+background: rgba(81, 215, 92, 0.25);
+box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+margin-left: 3%;
+cursor: pointer;
+margin-top: -3%;
+    }
+.verdetalletxt{
+  color: #FFF;
+  font-family: "Nunito Sans";
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.tacho{
+width: 17%;
+height: 64%;
+margin-top: -23%;
+margin-right: 4%;
+margin-left: auto;
+}
 /*
 <div class="holausu">
           <p class="identificarusuario">Identificar usuario</p>
@@ -174,65 +201,6 @@ margin-top: -2%;
 
         </div>
 /*/
-      .textousuario {
-      font-family: Inter;
-      font-weight: 400;
-      font-style: Regular;
-      font-size: 35px;
-      line-height: 100%;
-      letter-spacing: 0%;
-    margin-left: 4%;
-  margin-top: 2%; 
-  color: #FFFFFF;
-
-    }
-  .numeropuntos{
-    font-family: Inter;
-    font-weight: 500;
-    font-style: Medium;
-    font-size: 80px;
-    line-height: 100%;
-    letter-spacing: 0%;
-    margin-left: 3%;
-    margin-top: 2%;
-    color: white;
-
-  }
-    .puntospuntos{
-      font-family: Inter;
-      font-weight: 600;
-      font-style: Semi Bold;
-      font-size: 35px;
-      line-height: 100%;
-      letter-spacing: 0%;
-      margin-left: 4%;
-      margin-top: 2%;
-      color: white;
-    }
-  .usubarra{
-  width: 90%;
-  height: 13%;
-  background-color: #51D75CB2;
-  margin-left: 4%;
-  border-radius: 10px;
-  margin-top: 3%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  }
-  .flechausubarra{
-    width: 3%;
-    height: 48%;
-    }
-  .cuantoestasemana{
-    color: #FFF;
-    -webkit-text-stroke-color: #1F8527;
-    font-family: "Nunito Sans";
-    font-size: 25px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-  }
 
     
     .quehacer {
@@ -245,7 +213,6 @@ margin-top: -2%;
       border-radius: 25px;
       border-width: 2px;
       opacity: 1;
-      margin-top: 2%;
       margin-left: 2%;
       display: flex;
       flex-direction: column;
