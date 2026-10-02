@@ -121,14 +121,14 @@ body {
   box-shadow: 0px 2px 4px 0px #00000040;
   margin-top: 2vh;
   display: flex;
+  align-items: center;
   }
   .fotoelemento{
   height: 8vh;
   aspect-ratio: 1/1;
   background-color: #D9D9D9;
   margin-left: 2%;
-  margin-bottom: 1vh;
-  margin-top: 1vh;
+
   }
   .elementotxt{
     color: #000;
@@ -147,8 +147,7 @@ body {
     font-weight: 400;
     line-height: normal;
     margin-left: 15%;
-    margin-bottom: 1.05%;
-    margin-top: auto;
+
   }
   .maspuntos{
     color: #000;
@@ -158,18 +157,14 @@ body {
     font-weight: 700;
     line-height: normal;
     margin-left: 10%;
-      margin-bottom: 1.05%;
-        margin-top: auto;
   }
-  .puntoverdetxt{
+  .observacion{
     color: #000;
     font-family: "Nunito Sans";
     font-size: 22px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    margin-bottom: 1%;
-      margin-top: auto;
       margin-left: 10%;
   }
   .fecha{
@@ -179,8 +174,6 @@ body {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    margin-bottom: 1%;
-      margin-top: auto;
       margin-left: auto;
       margin-right: 5%;
   }

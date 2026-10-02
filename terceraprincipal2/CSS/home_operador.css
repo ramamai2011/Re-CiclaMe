@@ -239,6 +239,7 @@ margin-left: auto;
       margin-left: 2%;
       display: flex;
       flex-direction: column;
+      overflow: hidden;
     }
     .cargarproductostxt{
       color: #000;
@@ -283,19 +284,27 @@ background: #FFF;
 }
 .todoslosproductos{
   width: 100%;
-  height: 57%;
+  height: 70%;
   display: flex;
+  overflow-x: auto;
+  overflow-y: hidden;
+  flex-shrink: 0;
+  box-sizing: border-box;
+  padding-bottom: 2%;
 }
+
 .recproducto{
-width: 17%;
-height: 100%;
-display: flex;
-flex-direction: column;
-border-radius: 25px;
-background: #FFF;
-box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
-margin-left: 3%;
-margin-top: 1.5%;
+  width: 17%;
+  min-width: 17%;
+  height: 96%;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  border-radius: 25px;
+  background: #FFF;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  margin-left: 3%;
+  margin-top: 1.5%;
 }
 .fotomaterial{
 height: 22%;

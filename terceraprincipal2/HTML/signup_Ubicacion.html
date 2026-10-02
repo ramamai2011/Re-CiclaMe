@@ -136,8 +136,7 @@
     respuesta_registro.innerHTML = datos.mensaje;
   } catch (error) {
     console.error("Error al enviar el correo:", error);
-    respuesta_registro.innerHTML =
-      "Hubo un error al registrar el correo.";
+    '<span class="mensajeError">Hubo un error al registrar el correo.</span>';
   }
 });
       </script>

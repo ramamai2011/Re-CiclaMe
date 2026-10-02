@@ -127,5 +127,14 @@
     "postal": "1428",
     "puntos": 0,
     "rol": "ciudadano"
+  },
+  {
+    "id": 15,
+    "correo": "lukajskajskka@gmIL.COM",
+    "nombre": "asa",
+    "clave": "sasaa",
+    "postal": "1428",
+    "puntos": 0,
+    "rol": "ciudadano"
   }
 ]
