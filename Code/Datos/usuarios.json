@@ -136,5 +136,14 @@
     "postal": "1428",
     "puntos": 0,
     "rol": "ciudadano"
+  },
+  {
+    "id": 16,
+    "correo": "llsxjklaas@gmail.com",
+    "nombre": "dasufals",
+    "clave": "lsualudsfal",
+    "postal": "1428",
+    "puntos": 0,
+    "rol": "ciudadano"
   }
 ]

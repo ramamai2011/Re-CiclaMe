@@ -122,6 +122,7 @@ height: 10%;
 display: flex;
 width: 96%;
 margin-left: 2%;
+margin-top: 3%;
 }
 .categoriacompleto{
 width: 50%;
@@ -138,7 +139,7 @@ flex-direction: column;
 }
 .categoriadiv{
 height: 70%;
-width: 90%;
+width: 95%;
 border-radius: 9px;
 background: #F2F2F2;
 }
@@ -155,25 +156,69 @@ background: #F2F2F2;
     font-weight: 600;
     line-height: normal;
 }
+.medidadiv{
+  height: 70%;
+width: 100%;
+border-radius: 9px;
+background: #F2F2F2;
+}
+.puntosaotorgartxt{
+  color: #000;
+  font-family: "Nunito Sans";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-top: 3%;
+  margin-left: 2%;
+}
+.puntosaotorgardiv{
+  width: 96%;
+  height: 7%;
+  border-radius: 9px;
+background: #EDEDED;
+margin-top: 1%;
+margin-left: 2%;
+}
+.seleccionaricono{
+  color: #000;
+  font-family: "Nunito Sans";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-top: 3%;
+  margin-left: 2%;
+}
+.iconosdiv{
+height: 21%;
+width: 63%;
+border-radius: 18px;
+background: #EDEDED;
+margin-top: 1%;
+margin-left: 18.5%;
+}
+
+.guardarmaterial{
+  width: 96%;
+  height: 8%;
+  margin-left: 2%;
+  border-radius: 18px;
+background: #56A25C;
+border: none;
+cursor: pointer;
+margin-top: 3%;
+}
+.guardartxt{
+  color: #FFF;
+  font-family: "Nunito Sans";
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
   /*
-        <p class="cargartxt">Cargar Nuevo Material / Producto</p
-
-        <p class="nombrematerialtxt">Nombre del Material / Producto</p>
-        <div class="materialdiv"></div>
-        
-            <section class="categoriayunidades">
-
-        <section class="categoriacompleto">
-            <div class="categoriadiv"></div>
-        <p class="categoriatxt">Categoría</p>
-    </section>
-    <section class="unidadescompleto">
-        <p class="unidadestxt">Unidades de medida</p>
-        <div class="medidadiv"></div>
-    </section>
-
-    </section>
-
+     
         <p class="puntosaotorgartxt">Puntos a otorgar (Por unidad seleccionada arriba)</p>
         <div class="puntosaotorgardiv"></div>
 
