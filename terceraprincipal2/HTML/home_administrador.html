@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    />
+    <link rel="stylesheet" href="../CSS/home_administrador.css" />
+    <title>Document</title>
+    <script src="../../Code/Main/app.js" defer></script>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" defer></script>
+    <script src="../../Code/home.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+      rel="stylesheet"  
+    />
+  </head>
+  <body>
+    <div class="arribadeltodo">
+      <img
+        class="logo"
+        src="../../Assets/Assets/brand/logo-sintext.png"
+        alt="logo"
+      />
+      <p class="reciclametxt">Re-CiclaMe</p>
+      <div class="textosarriba">
+        <p class="parteactual home" onclick="window.location.href = 'Home_operador.html'">
+          Recepción
+        </p>
+   
+      
+        <p class="otraparte historialarriba" onclick="window.location.href = 'Historial_operador.html'">
+          Historial del punto 
+        </p>
+      </div>
+    </div>
+    <div class="contenedorabajo">
+       <div class="cargarnuevodiv">
+        <p class="cargartxt">Cargar Nuevo Material / Producto</p>
+        <p class="nombrematerialtxt">Nombre del Material / Producto</p>
+        <div class="materialdiv"></div>
+
+        <section class="categoriayunidades">
+
+        <section class="categoriacompleto">
+            <p class="categoriatxt">Categoría</p> 
+            <div class="categoriadiv"></div>
+    </section>
+    <section class="unidadescompleto">
+        <p class="unidadestxt">Unidades de medida</p>
+        <div class="medidadiv"></div>
+    </section>
+
+    </section>
+
+        <p class="puntosaotorgartxt">Puntos a otorgar (Por unidad seleccionada arriba)</p>
+        <div class="puntosaotorgardiv"></div>
+
+        <p class="seleccionaricono">Seleccionar ícono del material</p>
+
+        <div class="iconosmateriales"></div>
+        
+        <button class="guardarmaterial">Guardat material</button>
+       </div>
+
+       <div class="materialesactivos">
+
+       </div>
+    </div>
+    <script>
+      document.addEventListener("DOMContentLoaded", async () => {
+        const correo = localStorage.getItem("correoUsuario");
+
+        if (!correo) {
+          alert(
+            "No se encontró un usuario registrado. Redirigiendo al login...",
+          );
+          window.location.href = "/terceraprincipal2/HTML/login.html";
+          return;
+        }
+
+        try {
+          const respuesta = await fetch(
+            "http://localhost:3000/api/usuario/datos",
+            {
+              method: "POST",
+              headers: {
+                "Content-Type": "application/json",
+              },
+              body: JSON.stringify({ correo }),
+            },
+          );
+
+          if (!respuesta.ok) {
+            throw new Error("Error al obtener los datos del usuario");
+          }
+
+          const datos = await respuesta.json();
+
+          // Mostrar los datos en la interfaz
+          const holausu = document.querySelector(".textousuario");
+          holausu.textContent = `Hola, ${datos.nombre}`;
+          const puntos = document.querySelector(".numeropuntos");
+          puntos.textContent = datos.puntos;
+        } catch (error) {
+          console.error("Error:", error);
+          alert("Hubo un problema al cargar los datos del usuario.");
+        }
+      });
+      function sumar(numeroProducto) {
+  let gramos = document.getElementById("gramos" + numeroProducto);
+
+  let cantidad = parseInt(gramos.textContent);
+
+  cantidad++;
+
+  gramos.textContent = cantidad + " gramos";
+}
+
+function restar(numeroProducto) {
+  let gramos = document.getElementById("gramos" + numeroProducto);
+
+  let cantidad = parseInt(gramos.textContent);
+
+  if (cantidad > 0) {
+    cantidad--;
+  }
+
+  gramos.textContent = cantidad + " gramos";
+}
+    </script>
+  </body>
+</html>

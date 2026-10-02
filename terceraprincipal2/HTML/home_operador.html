@@ -97,9 +97,37 @@
                 <div class="masxpuntosabajo">+XXpts / g</div>
                 <div class="detalle">Detalle</div>
                 <div class="recgramos">
-                  <p class="menos">-</p>
-                <div class="gramos">0 gramos</div>
-                <p class="mas">+</p>
+                  <p class="menos" onclick="restar(0)">-</p>
+                  <div class="gramos" id="gramos1">0 gramos</div>
+                  <p class="mas" onclick="sumar(0)">+</p>
+              </div>
+                <div class="recagregar">
+                <div class="agregartxt">Agregar</div>
+              </div>
+              </div>
+              <div class="recproducto">
+                <div class="fotomaterial"></div>
+                <div class="materialtxt">Material</div>
+                <div class="masxpuntosabajo">+XXpts / g</div>
+                <div class="detalle">Detalle</div>
+                <div class="recgramos">
+                  <p class="menos" onclick="restar(1)">-</p>
+                  <div class="gramos" id="gramos1">0 gramos</div>
+                  <p class="mas" onclick="sumar(1)">+</p>
+              </div>
+                <div class="recagregar">
+                <div class="agregartxt">Agregar</div>
+              </div>
+              </div>
+              <div class="recproducto">
+                <div class="fotomaterial"></div>
+                <div class="materialtxt">Material</div>
+                <div class="masxpuntosabajo">+XXpts / g</div>
+                <div class="detalle">Detalle</div>
+                <div class="recgramos">
+                  <p class="menos" onclick="restar(2)">-</p>
+                  <div class="gramos" id="gramos1">0 gramos</div>
+                  <p class="mas" onclick="sumar(2)">+</p>
               </div>
                 <div class="recagregar">
                 <div class="agregartxt">Agregar</div>
@@ -140,7 +168,7 @@
                 <div class="detalle">Detalle</div>
                 <div class="recgramos">
                   <p class="menos">-</p>
-                <div class="gramos">0 gramos</div>
+                <div class="gramos" id="gramos">0 gramos</div>
                 <p class="mas">+</p>
               </div>
                 <div class="recagregar">
@@ -153,38 +181,10 @@
                 <div class="masxpuntosabajo">+XXpts / g</div>
                 <div class="detalle">Detalle</div>
                 <div class="recgramos">
-                  <p class="menos">-</p>
-                <div class="gramos">0 gramos</div>
-                <p class="mas">+</p>
-              </div>
-                <div class="recagregar">
-                <div class="agregartxt">Agregar</div>
-              </div>
-              </div>
-              <div class="recproducto">
-                <div class="fotomaterial"></div>
-                <div class="materialtxt">Material</div>
-                <div class="masxpuntosabajo">+XXpts / g</div>
-                <div class="detalle">Detalle</div>
-                <div class="recgramos">
-                  <p class="menos">-</p>
-                <div class="gramos">0 gramos</div>
-                <p class="mas">+</p>
-              </div>
-                <div class="recagregar">
-                <div class="agregartxt">Agregar</div>
-              </div>
-              </div>
-              <div class="recproducto">
-                <div class="fotomaterial"></div>
-                <div class="materialtxt">Material</div>
-                <div class="masxpuntosabajo">+XXpts / g</div>
-                <div class="detalle">Detalle</div>
-                <div class="recgramos">
-                  <p class="menos">-</p>
-                <div class="gramos">0 gramos</div>
-                <p class="mas">+</p>
-              </div>
+                  <p class="menos" onclick="restar(0)">-</p>
+                  <div class="gramos">0 gramos</div>
+                  <p class="mas" onclick="sumar(0)">+</p>
+                </div>
                 <div class="recagregar">
                 <div class="agregartxt">Agregar</div>
               </div>
@@ -234,6 +234,27 @@
           alert("Hubo un problema al cargar los datos del usuario.");
         }
       });
+      function sumar(numeroProducto) {
+  let gramos = document.getElementById("gramos" + numeroProducto);
+
+  let cantidad = parseInt(gramos.textContent);
+
+  cantidad++;
+
+  gramos.textContent = cantidad + " gramos";
+}
+
+function restar(numeroProducto) {
+  let gramos = document.getElementById("gramos" + numeroProducto);
+
+  let cantidad = parseInt(gramos.textContent);
+
+  if (cantidad > 0) {
+    cantidad--;
+  }
+
+  gramos.textContent = cantidad + " gramos";
+}
     </script>
   </body>
 </html>

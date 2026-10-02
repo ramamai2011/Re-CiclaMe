@@ -1,0 +1,189 @@
+body {
+    background-color: #efefef;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+  }
+ *{
+  margin: 0;
+ }
+
+  .logo {
+    height: 100%;
+    aspect-ratio: 1/1;
+    margin-left: 1.4%;
+  }
+  .reciclametxt{
+    font-family: Nunito Sans;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 30px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #1F8527;
+    margin-left: 1%;
+    width: 20%;
+    margin-top: 2.1%;
+  }
+  .arribadeltodo {
+    height: 11%;
+    width: 100%;
+    background-color: #ffffff;
+    display: flex;
+  }
+      .textosarriba {
+    gap: 4%;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    margin-top: 2%;
+    margin-left: 10%;
+  }
+  .parteactual {
+    font-family: Nunito Sans;
+    font-weight: 600;
+    font-style: SemiBold;
+    font-size: 30px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-decoration: underline;
+    text-decoration-style: solid;
+    text-decoration-thickness: 0%;
+    text-decoration-skip-ink: auto;
+    color: #56a25c;
+    cursor: pointer;
+    margin-left: 30%;
+  }
+  .otraparte {
+    font-family: Nunito Sans;
+    font-weight: 600;
+    font-style: SemiBold;
+    font-size: 30px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #4a4857;
+    cursor: pointer;
+  }
+  .home{
+    margin-left: 10%;
+   
+  }
+  .historialarriba{
+    margin-left: 3%;
+  }
+  .contenedorabajo {
+    width: 100%;
+    height: 89%;
+    background-color: #ededed;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .cargarnuevodiv{
+    width: 47%;
+    height: 93%;
+    margin-left: 2%;
+    border-radius: 25px;
+    margin-top: 2%;
+background: #FFF;
+box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  }
+  .cargartxt{
+    color: #000;
+font-family: "Nunito Sans";
+font-size: 25px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+margin-top: 2%;
+margin-left: 2%;
+  }
+  .nombrematerialtxt{
+    color: #000;
+    font-family: "Nunito Sans";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+
+    margin-top: 2%;
+margin-left: 2%;
+  }
+  .materialdiv{
+    width: 96%;
+    height: 7%;
+    border-radius: 9px;
+background: #EDEDED;
+margin-top: 2%;
+margin-left: 2%;
+  }
+
+.categoriayunidades{
+height: 10%;
+display: flex;
+width: 96%;
+margin-left: 2%;
+}
+.categoriacompleto{
+width: 50%;
+display: flex;
+flex-direction: column;
+}
+.categoriatxt{
+    color: #000;
+    font-family: "Nunito Sans";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+.categoriadiv{
+height: 70%;
+width: 90%;
+border-radius: 9px;
+background: #F2F2F2;
+}
+.unidadescompleto{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.unidadestxt{
+    color: #000;
+    font-family: "Nunito Sans";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+  /*
+        <p class="cargartxt">Cargar Nuevo Material / Producto</p
+
+        <p class="nombrematerialtxt">Nombre del Material / Producto</p>
+        <div class="materialdiv"></div>
+        
+            <section class="categoriayunidades">
+
+        <section class="categoriacompleto">
+            <div class="categoriadiv"></div>
+        <p class="categoriatxt">Categoría</p>
+    </section>
+    <section class="unidadescompleto">
+        <p class="unidadestxt">Unidades de medida</p>
+        <div class="medidadiv"></div>
+    </section>
+
+    </section>
+
+        <p class="puntosaotorgartxt">Puntos a otorgar (Por unidad seleccionada arriba)</p>
+        <div class="puntosaotorgardiv"></div>
+
+        <p class="seleccionaricono">Seleccionar ícono del material</p>
+
+        <div class="iconosmateriales"></div>
+        
+        <button class="guardarmaterial">Guardat material</button>
+       </div>
+
+       <div class="materialesactivos">
+
+       </div>
