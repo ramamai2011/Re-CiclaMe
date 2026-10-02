@@ -56,7 +56,12 @@
     </div>
     <div class="contenedorabajo">
       <div class="izquierda">
-        <div class="holausu"></div>
+        <div class="holausu">
+        <span class="textousuario">¡Hola, !</span>
+            <span class="numeropuntos"></span>
+            <span class="puntospuntos"></span>
+            <span class="usubarra"><svg class="flechausubarra" xmlns="http://www.w3.org/2000/svg" width="19" height="21" viewBox="0 0 19 21" fill="none"><path d="M9.5 19.5V1.5M17.5 9.375L9.5 1.5L1.5 9.375" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="cuantoestasemana">ésta semana</span></span>`;
+        </div>
 
         <div class="quehacer">
           <p class="hacertxt">¿Qué querés hacer?</p>
@@ -205,9 +210,11 @@
 
           // Mostrar los datos en la interfaz
           const holausu = document.querySelector(".textousuario");
+          localStorage.setItem("nombre_usuario", datos.nombre)
+          localStorage.setItem("puntos_usuario", datos.puntos)
           holausu.textContent = `Hola, ${datos.nombre}`;
           const puntos = document.querySelector(".numeropuntos");
-          puntos.textContent = datos.puntos;
+          puntos.textContent = `${datos.puntos} pts`;
         } catch (error) {
           console.error("Error:", error);
           alert("Hubo un problema al cargar los datos del usuario.");
