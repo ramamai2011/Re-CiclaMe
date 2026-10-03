@@ -93,7 +93,7 @@ font-style: normal;
 font-weight: 600;
 line-height: normal;
 margin-top: 2%;
-margin-left: 2%;
+margin-left: 3%;
   }
   .nombrematerialtxt{
     color: #000;
@@ -104,23 +104,23 @@ margin-left: 2%;
     line-height: normal;
 
     margin-top: 2%;
-margin-left: 2%;
+margin-left: 3%;
   }
   .materialdiv{
-    width: 96%;
+    width: 94%;
     height: 7%;
     border-radius: 9px;
 background: #EDEDED;
 margin-top: 2%;
-margin-left: 2%;
+margin-left: 3%;
   }
 
 .categoriayunidades{
 height: 11%;
 display: flex;
 gap: 3%;
-width: 96%;
-margin-left: 2%;
+width: 94%;
+margin-left: 3%;
 margin-top: 3%;
 }
 .categoriacompleto{
@@ -169,15 +169,15 @@ background: #F2F2F2;
   font-weight: 600;
   line-height: normal;
   margin-top: 3%;
-  margin-left: 2%;
+  margin-left: 3%;
 }
 .puntosaotorgardiv{
-  width: 96%;
+  width: 94%;
   height: 7%;
   border-radius: 9px;
 background: #EDEDED;
 margin-top: 1%;
-margin-left: 2%;
+margin-left: 3%;
 }
 .materialdiv, .categoriadiv, .medidadiv, .puntosaotorgardiv{
   border: none;
@@ -216,7 +216,7 @@ stroke: #1F8527;
   font-weight: 600;
   line-height: normal;
   margin-top: 3%;
-  margin-left: 2%;
+  margin-left: 3%;
 }
 .iconosmateriales{
 height: 21%;
@@ -247,9 +247,9 @@ height: 100%;
 }
 
 .guardarmaterial{
-  width: 96%;
+  width: 94%;
   height: 8%;
-  margin-left: 2%;
+  margin-left: 3%;
   border-radius: 18px;
 background: #56A25C;
 border: none;
@@ -281,7 +281,7 @@ margin-left: 2%;
     font-weight: 600;
     line-height: normal;
     margin-top: 2%;
-    margin-left: 2%;
+    margin-left: 3%;
     margin-bottom: 3%;
   }
  .listamateriales{
@@ -289,12 +289,12 @@ margin-left: 2%;
   overflow-y: auto;
 }
  .materialesdiv{
-  width: 96%;
+  width: 94%;
   height: 11%;
   border-radius: 9px;
 background: #F5F5F5;
 box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.25);
-margin-left: 2%;
+margin-left: 3%;
 margin-top: 0.3%;
 display: flex;
 align-items: center;

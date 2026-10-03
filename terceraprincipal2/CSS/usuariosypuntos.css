@@ -1,0 +1,280 @@
+body {
+    background-color: #efefef;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+  }
+ *{
+  margin: 0;
+ }
+
+    .logo {
+      height: 90%;
+      aspect-ratio: 1/1;
+      margin-left: 2%;
+    }
+    .reciclametxt{
+    color: #1F8527;
+font-family: "Nunito Sans";
+font-size: 30px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+      margin-left: 1%;
+      width: 20%;
+    }
+    .arribadeltodo {
+      height: 11%;
+      width: 100%;
+      background-color: #ffffff;
+      display: flex;
+      align-items: center;
+    }
+  .textosarriba {
+    gap: 4.5%;
+      display: flex;
+      align-items: center;
+      flex: 1;
+      height: 100%;
+      margin-left: 7%;
+    }
+    .perfil {
+      height: 50%;
+      width: auto;
+      aspect-ratio: 1/1;
+      margin-right: 3%;
+      cursor: pointer;
+    }
+  .parteactual {
+    font-family: Nunito Sans;
+    font-weight: 600;
+    font-style: SemiBold;
+    font-size: 30px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-decoration: underline;
+    text-decoration-style: solid;
+    text-decoration-thickness: 0%;
+    text-decoration-skip-ink: auto;
+    color: #56a25c;
+    cursor: pointer;
+  }
+  .otraparte {
+    font-family: Nunito Sans;
+    font-weight: 600;
+    font-style: SemiBold;
+    font-size: 30px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #4a4857;
+    cursor: pointer;
+  }
+  .contenedorabajo {
+    width: 100%;
+    height: 89%;
+    background-color: #ededed;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .cargarnuevodiv{
+    width: 47%;
+    height: 51%;
+    margin-left: 2%;
+    border-radius: 25px;
+    margin-top: 1.5%;
+background: #FFF;
+box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  }
+  .cargartxt{
+    color: #000;
+font-family: "Nunito Sans";
+font-size: 25px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+margin-top: 2%;
+margin-left: 3%;
+  }
+
+.categoriayunidades{
+height: 21%;
+display: flex;
+gap: 3%;
+width: 94%;
+margin-left: 3%;
+margin-top: 2%;
+}
+.categoriacompleto{
+width: 48.5%;
+display: flex;
+flex-direction: column;
+}
+.categoriatxt{
+    color: #000;
+    font-family: "Nunito Sans";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+.unidadescompleto{
+    width: 48.5%;
+    display: flex;
+    flex-direction: column;
+}
+.unidadestxt{
+    color: #000;
+    font-family: "Nunito Sans";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+.categoriadiv, .medidadiv{
+  height: 62%;
+  width: 100%;
+  border-radius: 9px;
+  background: #F2F2F2;
+}
+.puntosaotorgartxt{
+  color: #000;
+  font-family: "Nunito Sans";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-top: 3%;
+  margin-left: 3%;
+}
+.categoriadiv, .medidadiv, .puntoselect{
+  border: none;
+  box-sizing: border-box;
+  color: #000;
+  font-family: "Nunito Sans";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  padding-left: 2rem;
+}
+.categoriadiv::placeholder, .medidadiv::placeholder{
+  color: #757575;
+}
+.selectdiv{
+  width: 94%;
+  height: 13%;
+  margin-left: 3%;
+  margin-top: 1%;
+  display: flex;
+  align-items: center;
+  background: #F2F2F2;
+  border-radius: 9px;
+}
+.puntoselect{
+  appearance: none;
+  color: #757575;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+}
+.flechaselect{
+  margin-left: auto;
+  margin-right: 3%;
+}
+
+.guardarmaterial{
+  width: 94%;
+  height: 14%;
+  margin-left: 3%;
+  border-radius: 18px;
+background: #56A25C;
+border: none;
+cursor: pointer;
+margin-top: 3%;
+}
+.guardartxt{
+  color: #FFF;
+  font-family: "Nunito Sans";
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.materialesactivos{
+width: 47%;
+height: 93%;
+border-radius: 25px;
+margin-top: 1.5%;
+background: #FFF;
+box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+margin-left: 2%;
+}
+ .materialesactivostxt{
+    color: #000;
+    font-family: "Nunito Sans";
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-top: 2%;
+    margin-left: 3%;
+    margin-bottom: 3%;
+  }
+ .listamateriales{
+  height: 82%;
+  overflow-y: auto;
+}
+ .materialesdiv{
+  width: 94%;
+  height: 11%;
+  border-radius: 9px;
+background: #F5F5F5;
+box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.25);
+margin-left: 3%;
+margin-top: 0.3%;
+display: flex;
+align-items: center;
+}
+.fotomaterial{
+  height: 60%;
+  aspect-ratio: 1/1;
+  border-radius: 5px;
+  background: #ffffff;
+  margin-left: 2%;
+}
+.nombrematerialderecha{
+color: #000;
+font-family: "Nunito Sans";
+font-size: 20px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+margin-left: 3%;
+}
+.nombresusuario{
+color: #000;
+font-family: "Nunito Sans";
+font-size: 20px;
+font-style: normal;
+font-weight: 300;
+line-height: normal;
+margin-left: auto;
+}
+.puntoverdetxt{
+color: #000;
+font-family: "Nunito Sans";
+font-size: 20px;
+font-style: normal;
+font-weight: 300;
+line-height: normal;
+margin-left: auto;
+margin-right: 3%;
+}
+
+/*
+<p class="materialesactivostxt">Materiales Activos (número)</p>
+        <div class="materialesdiv">
+          <div class="fotomaterial"></div>
+          <p class="nombrematerialtxt">Nombre Material</p>
+          <p class="xpts">Xpts / Unidad</p>

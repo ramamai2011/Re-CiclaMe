@@ -88,7 +88,7 @@ line-height: normal;
     } 
     .holausu {
   height: 31%;
-  width: 49%;
+  width: 48%;
   border-radius: 25px;
   background: #FFF;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
@@ -156,12 +156,12 @@ margin-top: 4%;
 }
 
     .puntocercano {
-      width: 44%;
+      width: 46%;
       height: 31%;
       border-radius: 25px;
       background: #56A25C;
       margin-top: 1.5%;
-      margin-left: 3%;
+      margin-left: 2%;
       border-width: 2px;
       opacity: 1;
       display: flex;
@@ -228,7 +228,7 @@ margin-left: auto;
     
     .cargarpuntosdiv {
       width: 95.6%;
-      height: 55%;
+      height: 57%;
       background-color: #ffffff;
       box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
 

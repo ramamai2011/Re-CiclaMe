@@ -154,5 +154,14 @@
     "postal": "1428",
     "puntos": 0,
     "rol": "ciudadano"
+  },
+  {
+    "id": 18,
+    "correo": "sadsadsadasdsadsd@gmail.com",
+    "nombre": "merchoo",
+    "clave": "auraolaura",
+    "postal": "1428",
+    "puntos": 0,
+    "rol": "ciudadano"
   }
 ]
