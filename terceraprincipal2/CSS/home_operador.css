@@ -9,35 +9,41 @@
    }
 
     .logo {
-      height: 100%;
+      height: 90%;
       aspect-ratio: 1/1;
-      margin-left: 1.4%;
+      margin-left: 2%;
     }
     .reciclametxt{
-      font-family: Nunito Sans;
-      font-weight: 700;
-      font-style: Bold;
-      font-size: 30px;
-      line-height: 100%;
-      letter-spacing: 0%;
-      color: #1F8527;
+    color: #1F8527;
+font-family: "Nunito Sans";
+font-size: 30px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
       margin-left: 1%;
       width: 20%;
-      margin-top: 2.1%;
     }
     .arribadeltodo {
       height: 11%;
       width: 100%;
       background-color: #ffffff;
       display: flex;
+      align-items: center;
     }
-        .textosarriba {
-      gap: 4%;
+  .textosarriba {
+    gap: 7.5%;
       display: flex;
-      width: 100%;
+      align-items: center;
+      flex: 1;
       height: 100%;
-      margin-top: 2%;
-      margin-left: 10%;
+      margin-left: 12%;
+    }
+    .perfil {
+      height: 50%;
+      width: auto;
+      aspect-ratio: 1/1;
+      margin-right: 3%;
+      cursor: pointer;
     }
     .parteactual {
       font-family: Nunito Sans;
@@ -52,7 +58,6 @@
       text-decoration-skip-ink: auto;
       color: #56a25c;
       cursor: pointer;
-      margin-left: 30%;
     }
     .otraparte {
       font-family: Nunito Sans;
@@ -63,13 +68,6 @@
       letter-spacing: 0%;
       color: #4a4857;
       cursor: pointer;
-    }
-    .home{
-      margin-left: 10%;
-     
-    }
-    .historialarriba{
-      margin-left: 3%;
     }
     .contenedorabajo {
       width: 100%;
@@ -95,7 +93,7 @@
   background: #FFF;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
   opacity: 1;
-  margin-top: 3%;
+  margin-top: 1.5%;
   margin-left: 2%;
   display: flex;
   flex-direction: column;
@@ -162,7 +160,7 @@ margin-top: 4%;
       height: 31%;
       border-radius: 25px;
       background: #56A25C;
-      margin-top: 3%;
+      margin-top: 1.5%;
       margin-left: 3%;
       border-width: 2px;
       opacity: 1;
@@ -170,12 +168,13 @@ margin-top: 4%;
       flex-direction: column;
       padding-bottom: 1%;
       box-sizing: border-box;
-      margin-top: 3%;
+      margin-top: 1.5%;
 justify-content: space-between;
     }
     .masxpuntos{
       -webkit-text-stroke-width: 5px;
       -webkit-text-stroke-color: #1F8527;
+      paint-order: stroke fill;
       color: #FFFF;
       font-family: "Nunito Sans";
       font-size: 50px;
@@ -189,6 +188,7 @@ justify-content: space-between;
       color: #FFF;
       -webkit-text-stroke-width: 3px;
       -webkit-text-stroke-color: #1F8527;
+      paint-order: stroke fill;
       font-family: "Nunito Sans";
       font-size: 25px;
       font-style: normal;
@@ -248,7 +248,7 @@ font-size: 25px;
 font-style: normal;
 font-weight: 600;
 line-height: normal;
-margin-left: 3%;
+margin-left: 1.5%;
 margin-top: 1%;
     }
     .filtros{
@@ -256,7 +256,7 @@ margin-top: 1%;
     height: 12%;
     display: flex;
     gap: 0.5%;
-    margin-left: 3%;
+    margin-left: 1.5%;
     margin-top: 1%;
   }
   .filtro{
@@ -271,11 +271,14 @@ justify-content: center;
 align-items: center;
 gap: 10px;
 border-radius: 25px;
-border: 1px solid #000;
+border: 1px solid ;
 background: #FFF;
   }
+  .filtroactivo{
+    background: #1F8527;
+    color: #FFF;
+  }
 .filtrotxt{
-  color: #000;
   font-family: "Nunito Sans";
   font-size: 23px;
   font-style: normal;
@@ -291,13 +294,12 @@ background: #FFF;
   flex-shrink: 0;
   box-sizing: border-box;
   padding-bottom: 2%;
-  margin-left: 3%;
+  margin-left: 1.5%;
   gap: 2%;
 }
 
 .recproducto{
-  width: 17%;
-  min-width: 17%;
+  aspect-ratio: 1/1;
   height: 96%;
   flex-shrink: 0;
   display: flex;
@@ -373,7 +375,7 @@ border-radius: 9px;
 background: rgba(221, 221, 221, 0.87);
 background-color: #DDDDDDDD;
 margin-left: 3%;
-margin-top: 7%;
+margin-top: auto;
 display: flex;
 align-items: center;
 justify-content: center;
@@ -393,6 +395,7 @@ border-radius: 9px;
 background-color: #56A25C;
 margin-left: 3%;
 margin-top: 4%;
+margin-bottom: 6%;
 display: flex;
 align-items: center;
 justify-content: center;
@@ -406,3 +409,119 @@ cursor: pointer;
   font-weight: 600;
   line-height: normal;
 }
+
+
+
+
+/*detalleoperacion */
+
+
+.fondodetalleoperacion{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(236, 236, 236, 0.65);
+  display: none;
+}
+.fondodetalleoperacion{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(236, 236, 236, 0.65);
+  display: none;
+}
+.fondodetalleoperacion.visible{
+  display: block;
+}
+
+
+
+
+
+.contenedorentero{
+width: 54%;
+height: 66%;
+border-radius: 30px;
+background-color: #FFF;
+box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+margin-left: 23%;
+margin-top: 9%;
+padding-top: 1%;
+}
+.detalleoperacion{
+    color: #000;
+    font-family: "Nunito Sans";
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-left: 3%;
+    margin-bottom: 2%;
+}
+.elementoseleccionado{
+width: 94%;
+height: 10.5%;
+background: #F6F6F6;
+box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.25);
+margin-left: 3%;
+margin-top: 2%;
+display: flex;
+align-items: center;
+}
+.observacion{
+height: 9%;
+width: 94%;
+margin-left: 3%;
+border-radius: 9px;
+background: #EDEDED;
+box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+margin-top: 3%;
+}
+.terminartransaccion{
+    width: 94%;
+    margin-left: 3%;
+    height: 10.5%;
+    border-radius: 18px;
+background: #56A25C;
+margin-top: 4%;
+border: solid  #56A25C ;
+cursor: pointer;
+}
+.terminartxt{
+    color: #FFF;
+    font-family: "Nunito Sans";
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+.fotoelemento{
+height: 70%;
+aspect-ratio: 1/1;
+background: #D9D9D9;
+margin-left: 2%;
+}
+.elementotxt{
+    color: #000;
+    font-family: "Nunito Sans";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-left: 3%;
+}
+.masxpuntosdetalle{
+    color: #1F8527;
+    font-family: "Nunito Sans";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-left: 30%;
+    margin-right: 2%;
+}
+

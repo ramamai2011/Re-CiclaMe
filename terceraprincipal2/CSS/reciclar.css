@@ -29,7 +29,7 @@ body {
     border-radius: 15px;
     border-width: 2px;
     opacity: 1;
-    margin-top: 2%;
+    margin-top: 1.5%;
     margin-left: 2%;
   }
   .quehacer {
@@ -40,7 +40,7 @@ body {
     border-radius: 15px;
     border-width: 2px;
     opacity: 1;
-    margin-top: 2%;
+    margin-top: 1.5%;
     margin-left: 1.5%;
   }
   .hacertxt {
@@ -119,16 +119,12 @@ body {
     background-color: #ffffff;
     border: 2px solid #ffffff;
     margin: 2%;
+    margin-top: 1.5%;
     margin-left: 2%;
     margin-right: 3%;
     border-radius: 15px;
     border-width: 2px;
     opacity: 1;
-  }
-  .abajoizquierda {
-    flex-direction: column;
-    width: 70%;
-    height: 100%;
   }
   .abajoderecha {
     flex-direction: column;

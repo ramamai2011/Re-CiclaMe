@@ -5,44 +5,45 @@ body {
   }
 
 
-   .logo {
-      height: 100%;
+    .logo {
+      height: 90%;
       aspect-ratio: 1/1;
-      margin-left: 1.4%;
+      margin-left: 2%;
     }
     .reciclametxt{
-      font-family: Nunito Sans;
-      font-weight: 700;
-      font-style: Bold;
-      font-size: 30px;
-      line-height: 100%;
-      letter-spacing: 0%;
-      color: #1F8527;
+    color: #1F8527;
+font-family: "Nunito Sans";
+font-size: 30px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
       margin-left: 1%;
       width: 20%;
-      margin-top: 2.1%;
     }
     .arribadeltodo {
       height: 11%;
       width: 100%;
       background-color: #ffffff;
       display: flex;
+      align-items: center;
     }
 
 
-  .abajoizquierda {
-    flex-direction: column;
-    width: 70%;
-    height: 100%;
-  }
 
-          .textosarriba {
-      gap: 4%;
+  .textosarriba {
+    gap: 4.5%;
       display: flex;
-      width: 100%;
+      align-items: center;
+      flex: 1;
       height: 100%;
-      margin-top: 0%;
-      margin-left: 10%;
+      margin-left: 7%;
+    }
+    .perfil {
+      height: 50%;
+      width: auto;
+      aspect-ratio: 1/1;
+      margin-right: 3%;
+      cursor: pointer;
     }
     .parteactual {
       font-family: Nunito Sans;
@@ -75,7 +76,7 @@ body {
   background-color: #FFFFFF;
   border-radius: 25px;
   margin-left: 1.5%;
-  margin-top: 2.5%;
+  margin-top: 1.5%;
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
@@ -93,6 +94,7 @@ body {
   line-height: 100%;
   letter-spacing: 0%;
   color: #000000;
+  margin: 0;
 }
 
 .usapuntos {
@@ -102,7 +104,8 @@ font-size: 25px;
 font-style: normal;
 font-weight: 400;
 line-height: normal;
-margin-top: 0;
+margin-top: 0.5%;
+margin-bottom: 0;
 }
 
 .puntosdisponibles {
@@ -113,16 +116,16 @@ border: 1px solid #000;
 background: #ECECEC;
   height: 9%;
   width: 20%;
-  margin-right: 1%;
+  margin-right: 0;
   margin-left: auto;
-  margin-top: -10%;
+  margin-top: -5.5%;
 }
 
 .txtpuntosdisponibles {
   font-family: Nunito Sans;
   font-weight: 600;
   font-style: SemiBold;
-  font-size: 16px;
+  font-size: 20px;
   line-height: 100%;
   letter-spacing: 0%;
   color: #000000;
@@ -133,10 +136,10 @@ margin-left: 5%;
 }
 .filtros {
   display: flex;
-  margin-top: 6%;
+  margin-top: 2%;
   gap: 1.5%;
   width: 70%;
-  height: 8vh;
+  height: 6.5vh;
 }
 
 
@@ -162,14 +165,6 @@ font-style: normal;
 font-weight: 500;
 line-height: normal;
 }
-.txtactivo{
-  color: #FFF;
-  font-family: "Nunito Sans";
-  font-size: 23px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-}
 .filtroimg {
   margin-left: 1%;
   
@@ -177,8 +172,6 @@ line-height: normal;
 .filtroactivo {
   background-color: #56A25C;
   border: 1px solid #56A25C;
-}
-.filtroactivo p {
   color: #FFFFFF;
 }
 .tarjetasbeneficios{
@@ -186,14 +179,16 @@ display: flex;
 flex-wrap: wrap;
 width: 100%;
 height: 100%;
-gap: 3%;
+gap: 2%;
 }
 .tarjetabeneficio{
-width: 30%;
-height: 30vh;
-background-color: #F5F5F5;
-border: 1px solid #ECECEC;
+width: 32%;
+height: 26vh;
+box-sizing: border-box;
 border-radius: 18px;
+border: 1px solid #ECECEC;
+background: #F5F5F5;
+box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.25);
 margin-top: 2%;
 gap: 2%;
 }

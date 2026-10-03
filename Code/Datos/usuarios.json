@@ -145,5 +145,14 @@
     "postal": "1428",
     "puntos": 0,
     "rol": "ciudadano"
+  },
+  {
+    "id": 17,
+    "correo": "sads@gmail.com",
+    "nombre": "dqwdawd",
+    "clave": "dwadwdwad",
+    "postal": "1428",
+    "puntos": 0,
+    "rol": "ciudadano"
   }
 ]

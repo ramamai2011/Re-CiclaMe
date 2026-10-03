@@ -6,35 +6,41 @@
    
 
     .logo {
-      height: 100%;
+      height: 90%;
       aspect-ratio: 1/1;
-      margin-left: 1.4%;
+      margin-left: 2%;
     }
     .reciclametxt{
-      font-family: Nunito Sans;
-      font-weight: 700;
-      font-style: Bold;
-      font-size: 30px;
-      line-height: 100%;
-      letter-spacing: 0%;
-      color: #1F8527;
+    color: #1F8527;
+font-family: "Nunito Sans";
+font-size: 30px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
       margin-left: 1%;
       width: 20%;
-      margin-top: 2.1%;
     }
     .arribadeltodo {
       height: 11%;
       width: 100%;
       background-color: #ffffff;
       display: flex;
+      align-items: center;
     }
-        .textosarriba {
-      gap: 4%;
+  .textosarriba {
+    gap: 4.5%;
       display: flex;
-      width: 100%;
+      align-items: center;
+      flex: 1;
       height: 100%;
-      margin-top: 0%;
-      margin-left: 10%;
+      margin-left: 7%;
+    }
+    .perfil {
+      height: 50%;
+      width: auto;
+      aspect-ratio: 1/1;
+      margin-right: 3%;
+      cursor: pointer;
     }
     .parteactual {
       font-family: Nunito Sans;
@@ -89,52 +95,67 @@
   margin-left: 2%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between; 
+  justify-content: space-between;
+  padding-top: 3%;
   padding-bottom: 3%;
   box-sizing: border-box;
+  position: relative;
 }
-      .textousuario {
-      font-family: Inter;
-      font-weight: 400;
-      font-style: Regular;
-      font-size: 35px;
-      line-height: 100%;
-      letter-spacing: 0%;
-    margin-left: 4%;
-  margin-top: 2%; 
-  color: #FFFFFF;
+.tacho {
+  position: absolute;
+  top: 20%;
+  right: 6%;
+  width: 15%;
+  height: 45%;
+}
 
-    }
-  .numeropuntos{
-    font-family: Inter;
-    font-weight: 500;
-    font-style: Medium;
-    font-size: 80px;
-    line-height: 100%;
-    letter-spacing: 0%;
-    margin-left: 3%;
-    margin-top: 2%;
-    color: white;
-
-  }
-    .puntospuntos{
-      font-family: Inter;
-      font-weight: 600;
-      font-style: Semi Bold;
+    .textousuario {
+      color: #FFF;
+      -webkit-text-stroke-width: 6px;
+      -webkit-text-stroke-color: #1F8527;
+      paint-order: stroke fill;
+      font-family: "Nunito Sans";
       font-size: 35px;
-      line-height: 100%;
-      letter-spacing: 0%;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
       margin-left: 4%;
-      margin-top: 2%;
-      color: white;
+      margin-top: 0;
+    }
+    .numeropuntos {
+      color: #FFF;
+      -webkit-text-stroke-width: 10px;
+      -webkit-text-stroke-color: #1F8527;
+      paint-order: stroke fill;
+      font-family: "Nunito Sans";
+      font-size: 80px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      margin-left: 4%;
+      margin-top: 0;
+    }
+    .puntospuntos {
+      color: #FFF;
+      -webkit-text-stroke-width: 6px;
+      -webkit-text-stroke-color: #1F8527;
+      paint-order: stroke fill;
+      font-family: "Nunito Sans";
+      font-size: 35px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      margin-left: 4%;
+      margin-top: 0;
     }
   .usubarra{
-  width: 90%;
+  width: 92%;
   height: 13%;
+  gap: 1%;
   background-color: #51D75CB2;
   margin-left: 4%;
   border-radius: 10px;
-  margin-top: 3%;
+  margin-top: 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -145,7 +166,8 @@
     }
   .cuantoestasemana{
     color: #FFF;
-    -webkit-text-stroke-color: #1F8527;
+    -webkit-text-stroke: 3px #1F8527;
+    paint-order: stroke fill;
     font-family: "Nunito Sans";
     font-size: 25px;
     font-style: normal;
@@ -178,7 +200,7 @@
       font-family: Nunito Sans;
       font-weight: 600;
       font-style: SemiBold;
-      font-size: 35px;
+      font-size: 37px;
       line-height: 100%;
       letter-spacing: 0%;
       margin-top: 3%;
@@ -200,10 +222,11 @@
       font-family: Nunito Sans;
       font-weight: 600;
       font-style: SemiBold;
-      font-size: 20px;
+      font-size: 24px;
       line-height: 100%;
       letter-spacing: 0%;
-      margin-left: 20%;
+      flex: 1;
+      text-align: center;
     }
     .gift {
       width: 12%;
@@ -238,7 +261,7 @@
       background-color: #ffffff;
       box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
       border: 2px solid #ffffff;
-      margin-top: 1.4%;
+      margin-top: 1.5%;
       margin-left: 3%;
       border-radius: 25px;
       border-width: 2px;
@@ -250,11 +273,6 @@
       box-sizing: border-box;
     }
     
-    .abajoizquierda {
-      flex-direction: column;
-      width: 70%;
-      height: 100%;
-    }s
     .abajoderecha {
       flex-direction: column;
       width: 33%;
@@ -284,7 +302,7 @@
     .puntoverdecercano {
       font-family: Nunito Sans;
       font-weight: 600;
-      font-size: 33px;
+      font-size: 35px;
       line-height: 100%;
       margin-left: 4.5%;
       margin-top: 3%;
