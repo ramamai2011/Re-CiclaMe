@@ -91,8 +91,8 @@
 
         async function cargarNombreUsuario() {
           if (!correo) {
-            respuestaRegistro.textContent =
-              "No se encontró el correo para iniciar sesión.";
+            respuestaRegistro.innerHTML =
+              '<span class="mensajeError">No se encontró el correo para iniciar sesión.</span>';
             return;
           }
 
@@ -110,16 +110,17 @@
             const datos = await respuesta.json();
 
             if (!respuesta.ok) {
-              respuestaRegistro.textContent =
-                datos.mensaje || "No se pudo encontrar el usuario.";
+              respuestaRegistro.innerHTML = `<span class="mensajeError">${
+                datos.mensaje || "No se pudo encontrar el usuario."
+              }</span>`;
               return;
             }
 
             usuario.textContent = `@${datos.nombre}`;
           } catch (error) {
             console.error("Error al buscar el usuario:", error);
-            respuestaRegistro.textContent =
-              "Hubo un error al buscar el usuario.";
+            respuestaRegistro.innerHTML =
+              '<span class="mensajeError">Hubo un error al buscar el usuario.</span>';
           }
         }
 
@@ -135,8 +136,8 @@
           const contraseña = document.getElementById("contraseña").value;
 
           if (!correo || !contraseña) {
-            respuestaregistro.textContent =
-              "Por favor, completa todos los campos.";
+            respuestaregistro.innerHTML =
+              '<span class="mensajeError">Por favor, completa todos los campos.</span>';
             return;
           }
 
@@ -155,8 +156,9 @@
             const datos = await respuesta.json();
 
             if (!respuesta.ok) {
-              respuestaregistro.textContent =
-                datos.mensaje || "Error al iniciar sesión.";
+              respuestaregistro.innerHTML = `<span class="mensajeError">${
+                datos.mensaje || "Error al iniciar sesión."
+              }</span>`;
               return;
             }
 
@@ -165,7 +167,8 @@
             window.location.href = "/terceraprincipal2/HTML/home.html";
           } catch (error) {
             console.error("Error al iniciar sesión:", error);
-            respuestaregistro.textContent = "Hubo un error al iniciar sesión.";
+            respuestaregistro.innerHTML =
+              '<span class="mensajeError">Hubo un error al iniciar sesión.</span>';
           }
         });
       </script>

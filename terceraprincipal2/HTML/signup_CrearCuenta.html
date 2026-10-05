@@ -131,13 +131,11 @@
 
             if (!respuesta.ok) {
               const errorData = await respuesta.json();
-              respuesta_registro.innerHTML =
-                errorData.mensaje || "Error en la solicitud.";
+              respuesta_registro.innerHTML = `<span class="mensajeError">${
+                errorData.mensaje || "Error en la solicitud."
+              }</span>`;
               return;
             }
-
-            const datos = await respuesta.json();
-            respuesta_registro.innerHTML = datos.mensaje;
 
             if (respuesta.status === 201) {
               sessionStorage.setItem("nombreRegistro", nombreUsuario);

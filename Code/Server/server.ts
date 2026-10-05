@@ -211,7 +211,7 @@ app.post(
     ) {
       return res
         .status(400)
-        .json({ mensaje: "El nombre de usuario ya está registrado" });
+        .json({ mensaje: "El nombre de usuario ya está ocupado." });
     }
     if (clave.length < 5) {
       return res
@@ -250,7 +250,7 @@ app.post(
     ) {
       return res
         .status(409)
-        .json({ mensaje: "El nombre de usuario ya está registrado" });
+        .json({ mensaje: "El nombre de usuario ya está ocupado." });
     }
 
     const nuevoId =

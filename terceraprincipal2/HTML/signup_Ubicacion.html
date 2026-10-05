@@ -120,8 +120,9 @@
     console.log("Respuesta del servidor:", datos);
 
     if (!respuesta.ok) {
-      respuesta_registro.innerHTML =
-        datos.mensaje || "Error en la solicitud.";
+      respuesta_registro.innerHTML = `<span class="mensajeError">${
+        datos.mensaje || "Error en la solicitud."
+      }</span>`;
       return;
     }
 
@@ -136,7 +137,8 @@
     respuesta_registro.innerHTML = datos.mensaje;
   } catch (error) {
     console.error("Error al enviar el correo:", error);
-    '<span class="mensajeError">Hubo un error al registrar el correo.</span>';
+    respuesta_registro.innerHTML =
+      '<span class="mensajeError">Hubo un error al registrar el correo.</span>';
   }
 });
       </script>

@@ -115,7 +115,7 @@
               return;
             }
 
-            respuesta_registro.innerHTML = datos.mensaje;
+            respuesta_registro.innerHTML = `<span class="mensajeError">${datos.mensaje}</span>`;
           } catch (error) {
             console.error("Error al enviar el correo:", error);
             respuesta_registro.innerHTML =
