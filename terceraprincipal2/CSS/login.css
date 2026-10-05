@@ -120,6 +120,8 @@
         color: #FFFFFF;
     }
     .mensajeError{
+        display: block;
+        margin-top: 4%;
         color: #CD0000;
         font-family: "Nunito Sans";
         font-size: 19px;
