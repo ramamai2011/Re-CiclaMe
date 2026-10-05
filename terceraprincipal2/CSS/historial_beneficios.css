@@ -134,18 +134,6 @@ body {
     line-height: normal;
     margin-left: 4%;
   }
-  .unidadestxt{
-    font-family: Nunito Sans;
-    font-weight: 400;
-    font-style: Regular;
-    font-size: 22px;
-    line-height: 100%;
-    letter-spacing: 0%;
-    color: #000;
-    margin-left: 12%;
-    margin-bottom: 0;
-    margin-top: 3px;
-  }
   .maspuntos{
     font-family: Nunito Sans;
     font-weight: 700;
@@ -185,8 +173,4 @@ text-underline-position: from-font;
       margin-top: 3px;
       margin-right: 5%;
       margin-left: auto;
-  }
-  .iconoestado{
-  align-self: center;
-  margin-right: 3%;margin-left: auto;
   }
