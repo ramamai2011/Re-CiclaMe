@@ -1,6 +1,6 @@
 body {
     background-color: #efefef;
-    min-height: 100vh;
+    height: 100vh;
     margin: 0;
   }
 
@@ -184,7 +184,7 @@ gap: 2%;
 }
 .tarjetabeneficio{
 width: 32%;
-min-height: 195px;
+height: 26vh;
 position: relative;
 box-sizing: border-box;
 border-radius: 18px;
