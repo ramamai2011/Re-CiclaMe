@@ -1,6 +1,6 @@
 body {
     background-color: #efefef;
-    height: 100vh;
+    min-height: 100vh;
     margin: 0;
   }
 
@@ -184,7 +184,8 @@ gap: 2%;
 }
 .tarjetabeneficio{
 width: 32%;
-height: 26vh;
+min-height: 195px;
+position: relative;
 box-sizing: border-box;
 border-radius: 18px;
 border: 1px solid #ECECEC;
@@ -197,12 +198,13 @@ display: flex;
 .imagenn{
 width: 35%;
 height: 100%;
+display: flex;
 align-items: center;
 }
 .imgbeneficio{
+display: flex;
 margin-right: 0%;
 margin-left: auto;
-margin-top: 22.5%;
 margin-left: 15%;
 }
 .textoss{
@@ -238,6 +240,11 @@ flex-direction: column;
   font-weight: 700;
   line-height: normal;
   margin-top: -7%;
+}
+.flecha{
+  position: absolute;
+  right: 24.333px;
+  bottom: 20px;
 }
 
 /*
